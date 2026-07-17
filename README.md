@@ -1,63 +1,36 @@
-# Astro Starter Kit: Blog
+# Kit Bashing
 
-```sh
-npm create astro@latest -- --template blog
-```
+A field log of AI, networking, and questionable decisions. Kit's journey from 20 years of
+Coast Guard hazmat work into network engineering (CCNA in progress) and building a home lab
+from scratch, documented as it happens.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Built with [Astro](https://astro.build), deployed free on GitHub Pages.
 
-Features:
+## Writing a new post
 
-- ✅ Minimal styling (make it your own!)
-- ✅ 100/100 Lighthouse performance
-- ✅ SEO-friendly with canonical URLs and Open Graph data
-- ✅ Sitemap support
-- ✅ RSS Feed support
-- ✅ Markdown & MDX support
+1. Copy `src/content/blog/.template.md` to a new file in `src/content/blog/`, e.g.
+   `2026-07-16-first-boot.md` (no leading dot — dotfiles are ignored).
+2. Fill in the frontmatter (`title`, `description`, `pubDate`, optional `heroImage`) and write
+   the post in Markdown below it.
+3. Run `npm run dev` and check it at `localhost:4321/blog/`.
+4. Commit and push to `main` — the GitHub Actions workflow builds and deploys automatically.
 
-## 🚀 Project Structure
+## Commands
 
-Inside of your Astro project, you'll see the following folders and files:
+All commands run from the root of the project:
 
-```text
-├── public/
-├── src/
-│   ├── assets/
-│   ├── components/
-│   ├── content/
-│   ├── layouts/
-│   └── pages/
-├── astro.config.mjs
-├── README.md
-├── package.json
-└── tsconfig.json
-```
+| Command           | Action                                      |
+| :----------------- | :------------------------------------------ |
+| `npm install`       | Install dependencies                        |
+| `npm run dev`       | Start local dev server at `localhost:4321`  |
+| `npm run build`     | Build the production site to `./dist/`      |
+| `npm run preview`   | Preview the production build locally        |
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Deployment
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+Pushing to `main` triggers `.github/workflows/deploy.yml`, which builds the site and deploys
+it to GitHub Pages. In the repo's Settings → Pages, the source needs to be set to
+**GitHub Actions** (one-time setup, done when the repo is first pushed).
 
-The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-
-## Credit
-
-This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
+Site lives at `kitapplegate.github.io` — this repo is that special user-site repo, so there's
+no subpath.
