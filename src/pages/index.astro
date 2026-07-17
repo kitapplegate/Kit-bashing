@@ -14,6 +14,13 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 		<Header />
 		<main>
 			<h1>Kit Bashing</h1>
+			<p class="definition">
+				<strong>kit·bash·ing</strong> <em>(n.)</em> — building something new by cutting up and
+				repurposing parts from other kits never meant to go together. Model-builder slang,
+				usually associated with scratch-built sci-fi props. Also a reasonable description of
+				taking 20 years of hazmat and Coast Guard experience and bolting it onto a brand-new
+				career in IT.
+			</p>
 			<p>
 				A field log of AI, networking, and questionable decisions — one retired Coast Guard hazmat guy's
 				path from vessel inspections to CCNA to building a home lab from scratch, out loud, in public.
@@ -25,3 +32,15 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 		<Footer />
 	</body>
 </html>
+
+<style>
+	.definition {
+		font-size: 0.95em;
+		color: rgb(var(--gray));
+		border-left: 3px solid rgb(var(--gray-light));
+		padding-left: 1em;
+	}
+	.definition em {
+		color: rgb(var(--gray));
+	}
+</style>
