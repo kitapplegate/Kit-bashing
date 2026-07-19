@@ -7,7 +7,7 @@ import { defineConfig, fontProviders } from 'astro/config';
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://kitapplegate.github.io',
-	base: '/kit-bashing/',
+	base: '/Kit-bashing/',
 	integrations: [mdx(), sitemap()],
 	fonts: [
 		{
