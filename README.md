@@ -32,5 +32,6 @@ Pushing to `main` triggers `.github/workflows/deploy.yml`, which builds the site
 it to GitHub Pages. In the repo's Settings → Pages, the source needs to be set to
 **GitHub Actions** (one-time setup, done when the repo is first pushed).
 
-Site lives at `kitapplegate.github.io` — this repo is that special user-site repo, so there's
-no subpath.
+Site lives at `kitapplegate.github.io/kit-bashing/` — this is a regular project repo, so
+`astro.config.mjs` sets `base: '/kit-bashing'` and internal links use `import.meta.env.BASE_URL`
+to stay correct under that subpath.
