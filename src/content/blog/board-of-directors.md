@@ -6,9 +6,9 @@ pubDate: 'Jul 19 2026'
 
 I gave myself a board of directors. I am not a company.
 
-I was just tinkering, trying to figure out this AI thing, and somewhere in
-there I thought: you know what, I'll build myself a board. Not because I run
-a business — I don't — but because I can't fully control my own life, and my
+The idea wasn't mine. I was watching a YouTuber, Austin Marchese, and he
+suggested building something like this, so I did. Not because I run a
+business — I don't — but because I can't fully control my own life, and my
 ADHD brain needs somewhere to pitch ideas before they turn into decisions.
 Somewhere that can tell me "no, that's stupid," or "no, actually, that one's
 pretty good," instead of me just running with whatever felt exciting at
