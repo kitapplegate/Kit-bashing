@@ -56,7 +56,11 @@ arrange anything suggesting a real person said or did something they didn't.
 *Learned the hard way:* a round-3 draft had Joe Rogan, NetworkChuck and Zach
 Galifianakis interviewing Kit and credited Galifianakis with a line Claude
 wrote. Five seats missed it. If an AI persona appears in a post, the post says
-it's a persona.
+it's a persona — **every time it appears, in every post**, not once for the
+whole blog. Kit's ruling, 2026-08-04, after the truth seat caught an
+undisclosed Zach Galifianakis line in `same-feeling-twice`: a reader landing
+on any single post cold won't necessarily have read the one post that
+disclosed the panel first.
 
 **G3 — Anything you write must pass §3.** The seven tells apply with full force
 to your own sentences. No punchline tax, no dismiss-then-concede, no tidy
@@ -73,7 +77,7 @@ exists to restrain.
 **G5 — Don't sand the lurch.** His rhythm is uneven: a forty-word run-on, then
 four words. Prose you write matches that; it does not correct it. Smooth is the
 tell. A draft where your sentences are detectably more even than his has failed
-even if every sentence is good.
+even if every sentence is good. but it still needs to be readable, a little sanding is ok just not replaceing.
 
 **G6 — Kit approves.** He is the last gate and he can override anything in this
 document, including this document.
