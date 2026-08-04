@@ -22,3 +22,12 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# content-pipeline material for posts that will never be published to the
+# blog (LinkedIn/social-only, or otherwise flagged private) — keep off the
+# public GitHub repo entirely, per Kit, 2026-08-04. Add a line per slug.
+content-pipeline/interviews/same-feeling-twice.md
+content-pipeline/drafts/same-feeling-twice.md
+content-pipeline/drafts/same-feeling-twice-facts.md
+content-pipeline/reviews/same-feeling-twice-round-*.md
+content-pipeline/social/same-feeling-twice.md
