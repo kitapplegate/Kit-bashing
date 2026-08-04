@@ -19,10 +19,43 @@ If Kit already named one, skip to Step 1.
 
 Otherwise, offer candidates from:
 
-- `C:\Obsidian\mind-dump\*.md` — read the `## Mind-dump` section only. That's
-  the one part of those files Kit actually wrote; the rest is agent output.
-- Open tasks in `.claude/session-log.md`
+- **`C:\AI\Brain\*.md`** — Kit's own Obsidian vault, his primary capture
+  location as of 2026-08-03. Dated dumps ("Morning dump," "Midnight dump") plus
+  standalone notes. **This is his actual writing**, which makes it the best
+  source in the workspace.
 - Recent commits across `C:\AI\*` — what did he actually build lately?
+- Open tasks in `.claude/session-log.md`
+- `C:\Obsidian\mind-dump\*.md` — deprioritized. Only the `## Mind-dump` section
+  is Kit's; the rest is intake-agent output and is useless as voice material.
+
+### Reading `Brain` — two rules
+
+**1. Disclosure boundaries apply before you suggest anything.** That vault is
+where Kit thinks, not where he publishes, and it contains material `VOICE.md`
+§4 rules out of the blog — mental health specifics among them. **Filter
+candidates against §4 before showing him a list.** Do not surface a topic he has
+already decided isn't for public writing, and do not ask him to reconsider a
+boundary because a note looked like a good post. If a note is clearly outside
+§4, it is not a candidate and it does not get mentioned.
+
+**2. Look for moments, not projects.** Kit's ruling on how ideas actually
+arrive, 2026-08-03: a topic list produces posts *about* things; his blog works
+when it's *what happened*. The capture trigger he settled on is **"I caught
+myself telling somebody about it."**
+
+So when scanning, favour:
+
+- something that went wrong, or went right for a stupid reason
+- a moment he changed his mind
+- a specific physical detail — a number, a word, a time of day
+- anything with a person in it
+
+over:
+
+- project plans, build specs, roadmaps, "I should learn X"
+
+The three published posts all came from moments and none of them would have
+appeared on a topic list. Offer 3–5 as one line each and let him pick.
 
 Show 3–5 candidates as one line each. Let him pick.
 
