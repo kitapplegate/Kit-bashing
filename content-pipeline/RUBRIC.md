@@ -10,16 +10,31 @@ everything and the loop stops meaning anything.
 
 ## The gate
 
+*Amended 2026-08-07 by Kit: passing band lowered from 9-10 to 8-10 — "any
+below 7 is a fail" was his framing. A lone score of exactly 7 is a judgment
+call, not an auto-pass or auto-fail — see below.*
+
 A draft passes when **both** are true:
 
-- **5 of 6 seats score ≥ 9**
+- **5 of 6 seats score 8–10**
 - **No seat scores below 7**
+
+A seat scoring exactly **7** doesn't auto-fail the draft, but it also doesn't
+count toward the "5 of 6" majority. If the majority condition is only missed
+because of one or more 7s (not because of an actual sub-7 score), weigh it
+against the total picture — how many 7s, how close the notes are to
+resolved, whether the seats at 7 are basically "fix this one thing" notes —
+and use judgment on whether it's close enough to ship or needs another round.
+Don't use this as a loophole to wave through a draft with three 7s; it exists
+for the case of one seat sitting right at the line while everything else
+cleared 8+.
 
 Plus one override:
 
 - **Truth & Attribution has a veto.** Any unsupported claim, missing credit, or
   crossed disclosure boundary fails the draft outright, regardless of every
-  other score. Factual problems are not tradeable against good prose.
+  other score — including a numeric score of 10. Factual problems are not
+  tradeable against good prose.
 
 > *Note:* Kit's original rule was "4 of 5 seats ≥9, none below 7." The Slop
 > Detector was added as a sixth seat after the AI-voice problem was diagnosed,
