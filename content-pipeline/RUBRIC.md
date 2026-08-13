@@ -147,13 +147,21 @@ Checklist, all four required:
 
 ## 7. The traceability check
 
+*Amended 2026-08-12: the sentence-by-sentence trace table below is retired
+— it was wrong in all three rounds of `sounds-like-me` and generated more
+review noise than signal. Replaced by the fact ledger produced in
+`/post-draft`.*
+
 Runs before the panel, not as part of it. Mechanical, not a judgment call.
 
-For each sentence in the draft, find its source line in the transcript. Output
-a table. Any sentence with no source is either **cut** or **converted into a
-question for Kit** — never kept and never rewritten into something defensible.
+Open `content-pipeline/drafts/<slug>-facts.md`. For each fact or claim listed,
+confirm it cites a transcript source. Any fact with no source is either
+**cut** or **converted into a question for Kit** — never kept and never
+rewritten into something defensible. This is not a sentence-level check —
+ordinary connective prose doesn't need its own citation, per `VOICE.md` §1.
 
-A draft that fails traceability doesn't get scored at all. Fix it first.
+A draft with no fact ledger, or with an unsourced fact still in it, doesn't
+get scored at all. Fix it first.
 
 ---
 

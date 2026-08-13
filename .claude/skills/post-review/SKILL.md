@@ -12,14 +12,15 @@ scoring, the gate, and the loop guards.
 
 ## Step 0 — Traceability gate (runs first, mechanical)
 
-Open `content-pipeline/drafts/<slug>-trace.md`.
+Open `content-pipeline/drafts/<slug>-facts.md` (the fact ledger produced by
+`/post-draft`).
 
-**Any sentence marked UNTRACED means the draft does not get scored.** Stop,
-report the untraced sentences to Kit, and either cut them or get his words to
-replace them. Do not convene the panel on a contaminated draft — you'd be
+**Any fact with no transcript source means the draft does not get scored.**
+Stop, report the unsourced facts to Kit, and either cut them or get his words
+to replace them. Do not convene the panel on a contaminated draft — you'd be
 scoring prose nobody wrote.
 
-If there is no trace file at all, the draft didn't come from `/post-draft`.
+If there is no fact ledger at all, the draft didn't come from `/post-draft`.
 Tell Kit and stop.
 
 ---
@@ -49,12 +50,12 @@ Anchoring inflates scores and turns the loop into theater.
 
 ## Step 2 — Apply the gate
 
-From `RUBRIC.md`:
-
-- **5 of 6 seats ≥ 9**, AND
-- **no seat below 7**, AND
-- **`editor-truth` returns PASS** (it has veto — a FAIL fails the draft
-  regardless of every other score)
+Apply the current gate exactly as written in `RUBRIC.md` §"The gate" — do not
+hardcode the numbers here, they've drifted out of sync with `RUBRIC.md` before.
+As of the last amendment there: 5 of 6 seats in the 8–10 band, no seat below 7
+(a lone 7 is a judgment call, not an auto-fail — see `RUBRIC.md` for how to
+weigh it), and `editor-truth` must return PASS (veto, overrides every other
+score).
 
 Present the result as a table:
 
