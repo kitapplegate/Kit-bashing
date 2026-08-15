@@ -13,7 +13,7 @@ what he's doing. Right now he's eating. There's a feed button. There's a
 look button that tells you his mood, whether his color's bright or dull,
 whether he's hungry. That's the whole thing.
 
-![Steve, a pixel-art shrimp, in his tank with plants and bubbles](/images/steve.gif)
+![Steve, a pixel-art shrimp, in his tank with plants and bubbles](/Kit-bashing/images/steve.gif)
 
 I named him after the monkey with the little machine on his head from
 Cloudy with a Chance of Meatballs. Steve, with a bunch of E's. We've
@@ -103,7 +103,7 @@ Nothing's ordered. I'm traveling for work right now, which is also when
 I built Steve in the first place, so the plan is: get home, put it
 together, see if it works.
 
-![Steve's full window, name and controls visible, mid-crossing the tank](/images/steve.png)
+![Steve's full window, name and controls visible, mid-crossing the tank](/Kit-bashing/images/steve.png)
 
 When I picture it finished, it's not complicated. I look over and he's
 eating, or dozing off, or sifting through the substrate, or heading up
