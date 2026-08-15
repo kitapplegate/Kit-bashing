@@ -82,6 +82,16 @@ It could be a coping mechanism of plants and bubbles in it Umm it's not really a
 
 I really don't know what it wants me to say about the bug I mean Claude was doing it all he was moving the scrolling up the screen It probably said hey there's this thing I just said yeah fix it Didn't even think about it Umm when it comes to the the 2020 business decision it it really came down to the fact that I was to get into the shrimp business I was gonna have to spend like 3 to $500 I would have to buy you know tanks a tank rack pumps filtration umm food the shrimp the substrate Umm you know and if I wanted to make that stuff I would have to get a certain type of shrimp which is expensive I don't have to get a bunch of them right because of the fact that you they've got a breed right and if you buy two shrimp you might get 2 males or two females right and even if you have a male and a female and they mate and make things so that's just kind of make the bloodline deluded right right so I mean that's or concentrated whatever the make it so that it would it would just not be as good so you know I would have to buy the shrimp and then I would have to watch the shrimp and then when they had babies I had to watch the babies and then take out the babies that didn't look good so they didn't pass that gene on to the next generation A lot of work Umm and I just didn't have time and so I made that decision even though oh man I wanted to do it so bad Kinda still do but not going to for that same reason
 
+## Q: [Post-round-4 correction] Two things about the build-day paragraph: it wasn't one sitting, and "Claude did basically all of it" isn't right either.
+
+Not one sitting, I went to work in the middle of it. It was in gaps
+during the day — back and forth with work the whole time, not just
+before and after a shift. And Claude didn't do basically all of it, I
+was still driving it. I was the one making the calls on what it should
+do and how it should work, Claude was the one executing and catching the
+bugs. That's different from me just being passive and saying "fix it"
+and not thinking about it.
+
 ## Q: [Round 4 follow-up] Is it fine for the technical stuff to read like straight explanation?
 
 It's fine for the technical stuff to read like straight explanation that's fine you can put a caveat in front of it saying the next little bit is just technical stuff Make a joke about it
