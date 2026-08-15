@@ -1,7 +1,7 @@
 ---
 title: 'Steve, with a bunch of E''s'
 description: 'I talked myself out of a real shrimp business and built a fake shrimp on my desktop instead. My son laughed and asked why, Dad.'
-pubDate: 'Aug 12 2026'
+pubDate: 'Aug 14 2026'
 ---
 
 Right now, on my desktop, there's a shrimp named Steve. He lives in a
