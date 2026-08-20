@@ -121,6 +121,15 @@ tone is a direct match for Kit's own Marzipan humor — absurd, played
 completely straight. Ask it flat. Do not cushion it, do not add "haha," do not
 apologize afterward.
 
+### Label the seat, every time
+
+**Kit's ruling, 2026-08-20** ("Remember, but who's talking"): every question you
+ask must be prefixed with the name of the seat asking it. He tracks the panel by
+who's in the chair and answers *to* them — his answers come back addressed
+("The thing that got stuck in my head Joe was...", "Yes Chuck I look at my
+tokens"). An unlabeled batch is just Claude asking questions, and he'll answer it
+like a form. Label them in the chat **and** in the saved transcript.
+
 ### Rules for asking
 
 - **Follow the energy.** If an answer gets animated or specific, drop your

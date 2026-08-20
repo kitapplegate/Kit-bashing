@@ -25,6 +25,32 @@ Tell Kit and stop.
 
 ---
 
+## Step 0b — Append Kit's new answers to the transcript FIRST
+
+**This has caused a truth veto on two separate posts.** Any answer Kit gives in
+chat — a ruling, a correction, a new fact, a consent decision — must be appended
+to `content-pipeline/interviews/<slug>.md` **before** the panel convenes, and the
+fact ledger must cite it there.
+
+Relaying a chat answer straight to the drafter and citing it to an existing Q
+number is how `robot-overlords` round 2 fed the panel three fabricated citations.
+The truth seat then vetoed three genuine Kit statements as invented — and it was
+right to, because the record didn't hold them.
+
+If Kit said it and it isn't in the transcript file, it does not exist.
+
+### Only ask Kit what only Kit can know
+
+Kit's ruling, 2026-08-20, after a question batch he called "getting a little
+ridiculous": three of four questions were pipeline work pushed at him — choosing a
+source to link, interpreting what a discount meant, and a structural option written
+in pipeline jargon he couldn't parse.
+
+Ask him: what happened, what someone said, what he thinks, what he consents to.
+**Don't** ask him: which source to link, how to resolve a seat disagreement, or
+anything phrased in the pipeline's own vocabulary. Make those calls, tell him what
+you decided, and let him overrule at the publish gate under G6.
+
 ## Step 1 — Convene the panel
 
 Launch all six seats **in parallel, in a single message**, each with the draft
