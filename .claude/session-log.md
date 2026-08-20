@@ -1,5 +1,124 @@
 # Session Log
 
+## 2026-08-20 11:21
+
+**Summary:** Post 6 was built and is **not finished** — it sits as a draft Kit still has
+to read. He asked for a blog idea, passed on the four moment-shaped candidates pulled
+from `Brain` and the week's commits, and picked his own topic: his opinion on AI, data
+centers, and the misinformation around both. Everything for it lives untracked in
+`content-pipeline/` (`interviews/robot-overlords.md`, `drafts/robot-overlords.md`,
+`drafts/robot-overlords-facts.md`, `reviews/robot-overlords-round-{1,2,3}.md`) —
+**deliberately not committed, at Kit's instruction**, see open tasks. Only the two skill
+fixes were committed (`28868d9`). The session's real lesson is a process one: **the
+panel scores how well a post executes its frame and cannot tell you the frame is wrong.**
+The first draft made the spine a basketball story from Kit's college years (a player
+knocked his friend's pregnant wife over, the local news blamed alcohol, "my friend
+doesn't drink") because it was the best *scene* in the transcript. Three full six-seat
+rounds then polished that choice — totals 33 → 35 → 44, truth finally passing at 9 — and
+Kit killed it at the publish gate anyway: *"It's concentrating too much on the media when
+I wanted to talk about AI."* The reader seat had flagged exactly this in round 3 ("the
+media thesis never returns") and it was read as a pacing note. Two fresh AI-focused
+interview rounds (Q22–Q31) produced far better material than the original interview: the
+turn happened in a hotel on a work trip watching a NetworkChuck video about Claude Fable
+5; "more than just a super google" against "tell me about rabbits"; nine projects he has
+built; five Coast Guard moves where "get power, get the internet" came before the
+furniture; and the post's best line, on why his game came out wrong — *"it was like the
+AI was doing exactly what I was telling it to do, which, it's on me. I had spec
+documents. The specs were all about what the game does and there wasn't anything in them
+about the feel of the game."* The rescoped draft scored narrative 6 / voice 7 / slop 7 /
+substance 5 / reader 7 / truth PASS 8, was rebuilt again against those notes, and now
+stands at 1,210 words awaiting Kit's read.
+
+**Three fabrications, all mine, all caught by the truth seat.** (1) "forty years of not
+building" — an invented figure, in a post arguing against media numbers; Kit confirmed he
+had never said it (*"I don't know what 40 years you're talking about"*). Round-1 veto.
+(2) Round 2's veto was a **false positive with a real cause**: three genuine Kit
+statements were flagged as invented because his chat answers were relayed straight to the
+drafter and written into the ledger citing a Q number that did not contain them, instead
+of being appended to the transcript. (3) The same bookkeeping failure then recurred at
+Q30 (*"i really dont care… you do what you thinkn best"*) — **after** a mandatory
+checklist step had been written into `post-review` Step 0b specifically to prevent it.
+Writing the rule into the skill did not make the rule get followed; that is worth knowing
+about the fix, not just about the bug. Also invented and cut: "it sat in my head for a
+couple of days," and "My kid uses it for school," which came from Win+H garbling Kit's
+dictation and would have put his children into a public post.
+
+**A pattern worth a rubric amendment:** each round's remedy became the next round's
+fingerprint. Round 1 scored down for smooth, even sentences → round 2 installed nine
+clipped beats arriving one per paragraph, which voice and slop independently called
+"uniform rhythm wearing a costume" → round 3 cut those and lost the *long* end of the
+lurch entirely (no sentence over ~30 words) → the rescoped draft developed a comma-and
+metronome, fifteen identical two-clause joins. A fix applied evenly is itself a tell. The
+substance seat also reversed itself across drafts, telling the pipeline to cut "I look at
+my tokens, I'm conscious of what I'm spending" as posture in round 3 and then faulting
+its absence two drafts later.
+
+**Boundaries held.** The Oracle friend, the Kansas City data center and everything he
+relayed were cut entirely — he never consented and does not know, and Kit later said the
+project has since been rejected. The friend's wife's earlier miscarriages stayed out per
+Kit's ruling. The religion research project that was his first real use of Claude Fable 5
+is held out under `VOICE.md` §4 (no denomination specifics beyond "my church"); asked to
+rule, Kit said *"i really dont care… you do what you thinkn best,"* which was treated as
+delegation rather than an amendment, and the beat runs as "a big research question I
+actually cared about." New standing context from that same answer, and it recalibrates
+the reader seat: **"this is for me and my posterity, not the masses."** Also logged in the
+transcript: a coordinator error that put the phrase "your wife" into an interview question
+with no basis — Kit's marital status was never established.
+
+**Open tasks:**
+- [ ] **Kit is mid-read of `content-pipeline/drafts/robot-overlords.md`** and owes one
+  decision: cut or keep the data-centers/golf/nuclear-eighties block, 240 words and a
+  fifth of the post. Narrative and substance both want it gone (nothing happens in it,
+  Kit does not appear in it, it is the last remnant of the framing he rejected); cutting
+  takes the post to ~970, inside the 700–1000 convention. The three paragraphs are one
+  unit — the eighties paragraph points at "all this fear about data centers"
+- [ ] **The pipeline files are uncommitted by Kit's explicit choice this session.**
+  `kitapplegate/Kit-bashing` is public and `interviews/robot-overlords.md` contains a
+  third party's miscarriages, an unconsenting friend's employer and the internal company
+  messaging he relayed, and Kit's religious beliefs — none of which are in the post. He
+  chose to commit only the skill fixes and decide on the rest later. Options raised:
+  commit all (the post-3 precedent), gitignore the raw transcript, or keep deciding
+- [ ] **Slug is still `robot-overlords`** while the title is 'More than just a super
+  google'. The slug drives the published URL and must be settled before `/post-publish`
+- [ ] Title and the exact `description` string are both still unapproved (§5 exempts the
+  description from the Law but requires his explicit sign-off on the wording)
+- [ ] Kit's mom is in the post, unnamed, as the source of the family recipe chatbot's
+  recipes. Innocuous and it is his own line, but she was never asked
+- [ ] Consider a `RUBRIC.md` amendment: **no seat is scoped to ask whether the post is
+  about the right thing.** Three rounds polished a post Kit then rejected wholesale
+- [ ] Consider a `RUBRIC.md` note that a fix applied uniformly becomes the next round's
+  tell (see the pattern above), and that seats can contradict their own prior rounds
+- [ ] `api-costs.json` does **not** exist in `command-center` — only a settings file — so
+  the substance seat's repeated ask for a real spend figure has no source on disk. The
+  workspace `C:\AI\CLAUDE.md` claims that file exists and is wrong
+- [ ] The NRC Three Mile Island link 403s to automated checks from both nrc.gov hosts.
+  Moot while the nuclear material is cut, relevant if it ever returns
+- [ ] `post-social` has still never been run — not for post 3, not for post 5
+- [ ] `post-social`'s `SKILL.md` header still describes the retired subtract-only/trace
+  process
+- [ ] Markdown-embedded images under `public/images/` need the `/Kit-bashing/` prefix
+  hardcoded; bit `steve-the-shrimp` once and is not written into `CLAUDE.md` yet
+- [ ] `BlogPost.astro`'s hero slot is hardcoded to a 900×900 square crop — the first post
+  to set a landscape `heroImage` gets force-cropped
+- [ ] Update `content-pipeline/drafts/linkedin-profile-draft.md`'s Education section with
+  the FSNA/NGT Academy details already on record
+- [ ] YA Group Experience bullet in the LinkedIn draft is still thin
+- [ ] Once Kit pastes the LinkedIn draft in live, do a pass on `same-feeling-twice`'s
+  About-section tone for consistency
+- [ ] `VOICE.md` §4's disclosure list does not cover "complaining about a current,
+  named-by-implication employer to an audience that includes them"
+- [ ] `why-the-jump.md`'s fate still undecided — replace, unpublish, or leave
+- [ ] Instagram — recommended against 2026-08-03, never explicitly confirmed skipped
+- [ ] Kit wants the two old AI-written posts replaced, but post 3 quotes and links both as
+  exhibits. Still undecided
+- [ ] Best unanswered question from the original panel: when Claude read *The Marzipan
+  Incident* and described Kit's voice back to him, what did it actually say?
+- [ ] Check whether cloud routine `trig_015kD9D323Kqvo8dMoK5d2mD` still exists
+- [ ] Delete the merged `draft/board-of-directors-post` branch (local + `origin`)
+- [ ] Figure out how to hand the Z4nn brief file off to Z4nn
+- [ ] Later: clean up Kit's GitHub profile presentation
+- [ ] Longer-term: migrate hosting to Kit's home lab (or Justin's) once built
+
 ## 2026-08-14 21:10
 
 **Summary:** Finished and published post 5, "Steve, with a bunch of E's" (`https://kitapplegate.github.io/Kit-bashing/blog/steve-the-shrimp/`), then made two site-wide changes Kit asked for after publish. On the post itself, Kit's own final read-through caught three things the four review rounds hadn't: the technical paragraph's "One:/Two:" bug list read too listy (reworked into a rambling structure, `content-pipeline/interviews/steve-the-shrimp.md` and the draft both updated), the "Tom, Dick, and Harry's shrimp" idiom didn't land (cut), and a "We persevere... coping mechanism" paragraph didn't land either (cut, post now ends on the Raspberry Pi plan → screenshot → closing beat). Kit then flagged that the build-day paragraph was flat wrong on two facts — it wasn't one sitting (he worked it in gaps around a work shift) and Claude didn't "do basically all of it" (Kit was driving, Claude executed and caught two bugs) — corrected in both the transcript (logged as a `[Post-round-4 correction]` Q&A, per last session's own open-task note about appending new Kit answers before redrafting) and the draft. Also cut the girlfriend mention from both the body and the frontmatter description per Kit's request. Published via `/post-publish`: content-collection copy (`src/content/blog/steve-the-shrimp.md`), clean build, commit `557636d`, push, deploy watched to completion, and the live page/RSS fetch-verified. Two post-publish bugs, both caught by Kit and fixed same-session: (1) the embedded `steve.gif`/`steve.png` images 404'd live — markdown image syntax isn't base-aware like Astro's routed hrefs/Image component, so `/images/steve.gif` resolved to the site root instead of the `/Kit-bashing/` subpath this project-repo actually deploys under; fixed by hardcoding the `/Kit-bashing/` prefix in the markdown (`e8e60d6`) — **this will recur on any future post that embeds a `public/images/` file via plain markdown**, worth a standing note (see open tasks); (2) `pubDate` was still `Aug 12` from when the draft was scaffolded, Kit caught it should be the actual publish day, fixed to `Aug 14` (`0e69b58`).
