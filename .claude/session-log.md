@@ -1,5 +1,137 @@
 # Session Log
 
+## 2026-08-20 16:38
+
+**Summary:** Post 6 shipped and is live at
+https://kitapplegate.github.io/Kit-bashing/blog/more-than-a-super-google/ —
+"More than just a super google" (`52d0737`, the only commit pushed this session).
+The session opened mid-read of the disjointed draft left over from the morning and
+ran three distinct phases. **Phase 1, polish:** cut the nuclear-eighties paragraph
+(97 words ending *"the media grabbed onto that and it wasn't even true"*) as the last
+remnant of the media framing Kit rejected at the previous gate, then ran
+`editor-barry` for a final pass (1,132 → 1,083 words: killed the "It stuck in my
+head" planted gun, replaced a negate-then-correct construction, lengthened four
+places to restore the missing long end of the lurch, added the "which is Anthropic's
+AI model" gloss so a cold reader stops parsing "Fable 5" as a video game). Kit
+restored two things Barry had removed — his own hedge *"AI is **eventually** going to
+be a basic utility"* and *"I've had that conversation with people at work and they
+agreed with me"* — and caught a genuine ordering bug: two of his sentences from
+different answers (A5 and A6) had been stacked so the month-scale outcome preceded
+the week-scale turning point, making "a week later" point at nothing. **Phase 2, Kit
+rejected the whole draft as disjointed, and he was right.** Root cause, and it is the
+same failure as the morning's rescope: the rescope removed the spine (the basketball
+scene) and replaced it with a *topic*, and a topic is not a structure. What was left
+was nine true, verified, causally unrelated things in a row. The panel could not see
+it because no seat is scoped to ask whether the post is shaped like anything — this
+is the **second time** this post died at Kit's gate for that class of reason.
+**Phase 3, the rebuild.** The coordinator recommended splitting into two posts; Kit
+overruled and supplied the actual spine, which was better than either option offered:
+the robot-overlords joke frames the post, the body is the steps he took learning AI,
+and his dad's call is where it arrives — because he went from asking a chatbot about
+rabbits to being the guy his dad calls about Claude. That ordering makes the dad
+material load-bearing instead of a detour and gives *"I'm not complaining and I'm not
+worried about it. I'm excited about our future"* (A1, verbatim) an antecedent it never
+had. Full redraft via `/post-draft` rules at 1,108 words with a rebuilt fact ledger;
+Kit then cut the space-race/open-weights paragraph himself, landing at ~1,051. Draft
+and ledger were renamed to `content-pipeline/drafts/more-than-a-super-google{,-facts}.md`
+to match the approved slug.
+
+**The find that changed how this was published.** At the publish gate, `main` turned
+out to be **5 commits ahead of `origin`, not 2** — the coordinator had assumed only
+its own commits were pending. Worse, `.claude/session-log.md` **had never been pushed
+at all**; the file does not exist on `origin/main`. Commit `b8710c9` (this morning's
+entry) contains the friend's wife's miscarriages, the Oracle/Kansas City data center,
+and the religion research material — the exact set of things Kit kept out of this
+repo by deliberately not committing `content-pipeline/`. `kitapplegate/Kit-bashing`
+is public, and a push is not meaningfully reversible. So the publish was scoped: a
+`publish/super-google` branch was cut from `origin/main`, the post committed there
+alone (verified zero sensitive terms in the staged diff), and pushed as
+`publish/super-google:main`, taking `origin/main` from `1143b9a` to `52d0737` with
+one file and nothing else. Deploy run `32419689602` succeeded in 37s and the result
+was verified live rather than assumed — HTTP 200, the opener, the load-bearing spec
+line and Kit's closer all present in the served HTML, dated Aug 20 2026, listed on the
+blog index, present in `rss.xml`, and all three outbound links returning 200. Kit had
+first chosen to schedule the publish for Aug 21 despite being shown the 2026-07-24
+silent-failure history, then reversed to publishing today with the date changed to
+`'Aug 20 2026'`; no scheduled job was ever created.
+
+**A second wrong assumption, and a real time sink.** Kit repeatedly reported the draft
+"hasn't changed" while the file on disk demonstrably had. Re-sending the same file did
+not fix it — his viewer was serving a cached copy keyed to the filename, and he
+eventually deleted `robot-overlords.md` believing it was the wrong version. What
+actually worked was **renaming the file**. Several exchanges were lost to this. If it
+recurs: send under a new filename, or paste the text inline in the conversation, which
+never caches.
+
+**Deliberately left alone.** The three local commits (`b8710c9`, `28868d9`, `26779d0`)
+are still unpushed pending Kit's decision on the session log. Local `main` is diverged
+from `origin/main` and additionally carries `753c48d` and `4ac724b`, a post commit and
+merge whose content is identical to the pushed `52d0737` but under different hashes —
+these are now redundant and will need resolving before `main` is ever pushed. The
+`publish/super-google` branch is still present locally. The three review files are
+still named `robot-overlords-round-{1,2,3}.md` and score a draft that no longer exists.
+No editor panel was run against the final draft: Kit was offered a reduced three-seat
+review (truth, narrative, reader) and chose to ship without it — *"its good enough. not
+the best be not the worst."*
+
+**Open tasks:**
+- [ ] **Decide how `.claude/session-log.md` is handled — this blocks every future push
+  of `main`.** It has never been on `origin`, `b8710c9` puts a third party's
+  miscarriages, an unconsenting friend's employer and Kit's religious beliefs into a
+  public repo, and the log will keep summarizing sensitive interviews every session.
+  Options: gitignore it, redact this entry and commit a cleaned version, or keep it
+  local-only permanently
+- [ ] **Local `main` is diverged from `origin/main`** and holds 5 unpushed commits, two
+  of which (`753c48d`, `4ac724b`) duplicate the content of the pushed `52d0737` under
+  different hashes. Needs a rebase or reset before `main` is pushed again. The
+  `publish/super-google` branch can be deleted once that is settled
+- [ ] **`content-pipeline/` is still untracked by Kit's explicit choice** — the new
+  draft, the ledger, `interviews/robot-overlords.md` and the three review files. Same
+  public-repo question as the session log; the transcript is the most sensitive file
+  in the project
+- [ ] The `description` string shipped without the explicit sign-off `VOICE.md` §5
+  requires. Kit approved the post as a whole ("post it today") having seen the
+  frontmatter, but never ratified the exact wording: *"A podcast joke about robot
+  overlords, and what the last month of actually learning this stuff looked like."*
+- [ ] **`RUBRIC.md` amendment, now with two data points: no seat is scoped to ask
+  whether the post is about the right thing, or shaped like anything.** Three rounds
+  polished a post Kit rejected wholesale, and the rescoped replacement then died at
+  the gate for the same reason. The premise check has to run *before* drafting, not as
+  a seventh seat after
+- [ ] `RUBRIC.md` note that a fix applied uniformly becomes the next round's tell, and
+  that seats can contradict their own prior rounds
+- [ ] Kit's mom is in the post, unnamed, as the source of the family recipe chatbot's
+  recipes. Innocuous and it is his own line, but she was never asked
+- [ ] `/post-social` has still never been run — not for post 3, post 5, or post 6.
+  Offered at the end of this session and not answered
+- [ ] `post-social`'s `SKILL.md` header still describes the retired subtract-only/trace
+  process
+- [ ] `api-costs.json` does **not** exist in `command-center` — only a settings file —
+  so the substance seat's repeated ask for a real spend figure has no source on disk.
+  The workspace `C:\AI\CLAUDE.md` claims that file exists and is wrong
+- [ ] Markdown-embedded images under `public/images/` need the `/Kit-bashing/` prefix
+  hardcoded; bit `steve-the-shrimp` once and is still not written into `CLAUDE.md`
+- [ ] `BlogPost.astro`'s hero slot is hardcoded to a 900×900 square crop — the first
+  post to set a landscape `heroImage` gets force-cropped
+- [ ] Update `content-pipeline/drafts/linkedin-profile-draft.md`'s Education section
+  with the FSNA/NGT Academy details already on record
+- [ ] YA Group Experience bullet in the LinkedIn draft is still thin
+- [ ] Once Kit pastes the LinkedIn draft in live, do a pass on `same-feeling-twice`'s
+  About-section tone for consistency
+- [ ] `VOICE.md` §4's disclosure list does not cover "complaining about a current,
+  named-by-implication employer to an audience that includes them"
+- [ ] `why-the-jump.md`'s fate still undecided — replace, unpublish, or leave
+- [ ] Instagram — recommended against 2026-08-03, never explicitly confirmed skipped
+- [ ] Kit wants the two old AI-written posts replaced, but post 3 quotes and links both
+  as exhibits. Still undecided
+- [ ] Best unanswered question from the original panel: when Claude read *The Marzipan
+  Incident* and described Kit's voice back to him, what did it actually say?
+- [ ] Check whether cloud routine `trig_015kD9D323Kqvo8dMoK5d2mD` still exists
+- [ ] Delete the merged `draft/board-of-directors-post` branch (local + `origin`)
+- [ ] Figure out how to hand the Z4nn brief file off to Z4nn
+- [ ] Later: clean up Kit's GitHub profile presentation
+- [ ] Longer-term: migrate hosting to Kit's home lab (or Justin's) once built
+
 ## 2026-08-20 11:21
 
 **Summary:** Post 6 was built and is **not finished** — it sits as a draft Kit still has
