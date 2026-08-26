@@ -45,7 +45,19 @@ this out directly and he was right.
 
 **1. Read the whole transcript** before cutting anything.
 
-**2. Find the spine.** One moment, one turn, one thing that changed.
+**2. Find the spine.** One moment, one turn, one thing that changed. **Before
+writing a word of prose, state the frame back to Kit in one sentence** — "this
+post is about ___" — and get a yes/no. `robot-overlords` burned three full
+review rounds because the spine was picked on "best scene in the transcript"
+(a basketball fight) instead of what Kit actually wanted the post to be about
+(his AI use), and no seat was scoped to catch a wrong frame — only whether the
+wrong frame was well executed. One sentence up front is cheaper than a rescope.
+
+**2b. If Kit gives you a new answer in chat mid-draft**, append it to
+`content-pipeline/interviews/<slug>.md` verbatim, in this same turn, before
+using it for anything else. Do not relay it to `editor-barry` or write it into
+the fact ledger from memory — an answer that only exists in chat does not
+exist for the truth seat.
 
 **3. Build the narrative.** Scene first, usually. You may reorder freely for
 chronology and sense — the Narrative seat will tell you if the middle runs

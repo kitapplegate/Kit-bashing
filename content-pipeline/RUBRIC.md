@@ -59,6 +59,18 @@ brakes:
 and the draft scores *higher* because invented details read well. The traceability
 check in §7 is the primary defense; these guards are the backstop.
 
+4. **The uniform-fix trap.** Documented on `robot-overlords`, all three rounds:
+   round 1 was flagged for even, smooth sentence rhythm; the fix installed a
+   "long sentence, then short confirming stamp" device that fired nine times
+   and was itself flagged as manufactured in round 2; cutting that in round 3
+   left the draft missing Kit's actual long run-on sentences entirely. Same
+   underlying defect, three different visible shapes, three rounds spent.
+   **A fix applied evenly across a draft is itself a tell** — real correction
+   is uneven, like everything else about how he writes. When a note says "cut
+   the em-dashes" or "break this pattern," don't replace it with a different
+   pattern at the same rate. Fix the flagged instances and leave the rest of
+   the draft's texture alone.
+
 ---
 
 ## The six seats

@@ -12,6 +12,15 @@ scoring, the gate, and the loop guards.
 
 ## Step 0 — Traceability gate (runs first, mechanical)
 
+**Before opening anything else: grep `content-pipeline/interviews/<slug>.md`
+for every Q-number the fact ledger cites.** Any citation that doesn't resolve
+to an actual line in the transcript file means a chat answer got relayed
+without being appended. Stop and append it now, verbatim, before doing
+anything else — including replying to Kit. This has caused a false truth veto
+on two separate posts (`robot-overlords` rounds 2 and 3-prep) *after* the rule
+against it was already written down once. Writing the rule down didn't fix it;
+checking the file mechanically, every time, before scoring, does.
+
 Open `content-pipeline/drafts/<slug>-facts.md` (the fact ledger produced by
 `/post-draft`).
 
