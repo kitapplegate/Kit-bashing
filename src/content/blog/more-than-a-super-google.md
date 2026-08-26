@@ -1,7 +1,7 @@
 ---
 title: 'More than just a super google'
 description: 'A podcast joke about robot overlords, and what the last month of actually learning this stuff looked like.'
-pubDate: 'Aug 21 2026'
+pubDate: 'Aug 20 2026'
 ---
 
 I've been listening to a lot of podcasts and on one of them somebody asked
