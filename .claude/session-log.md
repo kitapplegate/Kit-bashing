@@ -1,5 +1,48 @@
 # Session Log
 
+## 2026-09-02 18:30
+
+**Summary:** Short session, mostly conversational. Kit asked how he'd get OpenAI's Codex
+CLI to run this repo's content pipeline and whether the repo has enough for Codex to
+work from — established that the pipeline's actual instructions (`content-pipeline/README.md`,
+`VOICE.md`, `RUBRIC.md`, each stage's `.claude/skills/*/SKILL.md`, and the six
+`.claude/agents/editor-*.md` persona files) are plain markdown Codex can read directly,
+but root `AGENTS.md` is currently just the generic Astro dev-server note and doesn't
+point at any of it, and the six-seat blind review panel depends on Claude Code's
+subagent isolation, which Codex has no equivalent for. Follow-up question — using Codex
+only for stage 2 drafting — landed on that being a clean fit, since `/post-draft` is
+single-agent file-in/file-out and doesn't touch the subagent gap; no Codex run was
+actually made this session, this was scoping only. Then Kit said he'd "ditched" the
+`robot-overlords` post idea "a while ago," so its three untracked leftover files were
+deleted: `content-pipeline/interviews/robot-overlords.md` and
+`content-pipeline/reviews/robot-overlords-round-{1,2,3}.md` — these were exactly the
+files the 2026-08-20 16:38 entry's open tasks flagged as deliberately-untracked cruft
+from the abandoned draft (the `robot-overlords.md` *draft* itself no longer existed even
+then — Kit had already deleted it earlier believing it was a stale cached copy, per that
+same entry). Also created this repo's first `NEXT.md` and `VERIFICATION.md`, since
+neither existed despite several prior session-log entries.
+
+**Status:** `robot-overlords` interview + review cleanup — implemented and verified
+locally (`git status --porcelain` confirms the four files are gone; nothing was ever
+committed, so there's no git history to clean up). Codex-for-drafting idea — discussed
+only, not yet attempted.
+
+**Next:** Ask Kit whether the `more-than-a-super-google` draft + facts files (also
+untracked, also leftover from an already-shipped post) should get the same cleanup —
+see `NEXT.md`.
+
+**Open tasks:**
+- [ ] next — resolve the `more-than-a-super-google` draft/facts leftover files, per `NEXT.md`
+- [ ] blocked-by-Kit — `.claude/session-log.md` has never been pushed to `origin` and
+  local `main` is 5 commits ahead of `origin/main` (2 duplicating already-pushed
+  content); both still block any future push, unresolved since 2026-08-20
+- [ ] blocked-by-Kit — whether to actually run Codex against `/post-draft` for a future
+  post, now that the scoping question is answered
+
+**Deferred:** The much longer backlog from the 2026-08-20 16:38 entry (RUBRIC.md premise-check
+amendment, `/post-social` never run, LinkedIn draft edits, `why-the-jump.md`'s fate, etc.)
+is untouched this session — see that entry rather than re-copying it here.
+
 ## 2026-08-20 16:38
 
 **Summary:** Post 6 shipped and is live at
