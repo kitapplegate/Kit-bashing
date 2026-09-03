@@ -147,9 +147,17 @@ vault is.
 Checklist, all four required:
 
 - [ ] Every factual claim traces to a specific line in the transcript
-- [ ] Every idea, tool, or person that came from outside is named and linked
+- [ ] Every outside idea, quote, source, or factual claim the post relies on is
+      named and linked
 - [ ] No disclosure boundary from `VOICE.md` §4 is crossed
 - [ ] No invented numbers, commands, dates, or quotes
+
+Do not turn this into a brand-name scanner. An ordinary product, service, tool,
+or person mentioned as part of Kit's firsthand account does not automatically
+need a link. Require one when the post is crediting or relying on something
+external, or when the reader needs the destination to understand the claim.
+Kit clarified this under G6 on 2026-09-02 after "Google account" triggered a
+mechanical veto.
 
 - **10** — all four clean
 - **7** — all four clean but attribution is buried where a reader would miss it

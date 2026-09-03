@@ -250,6 +250,13 @@ board-of-directors post originally implied the idea was Kit's when it came from
 YouTuber Austin Marchese, and had to be corrected after publication. The Truth
 & Attribution seat exists because of that incident.
 
+An ordinary product or service mention in Kit's firsthand account is not, by
+itself, an attribution claim. It does not require a link merely because the
+brand is named. Link it when the post relies on the company's material, credits
+an outside idea or claim, or the destination would materially help the reader.
+Kit settled this under G6 on 2026-09-02 after a reviewer vetoed the phrase
+"Google account."
+
 **No invented specifics.** Numbers, commands, error messages, dates, and
 quotes must come from the transcript. A plausible-sounding detail is worse
 than no detail, because it reads as *more* credible, not less.

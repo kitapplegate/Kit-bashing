@@ -49,6 +49,19 @@ That's what this is.
 
 Stage 3 loops back to **2.5** on a failed gate, max 3 rounds.
 
+### The learning loop
+
+Kit's reactions are part of the pipeline, not disposable chat history. During
+every stage, preserve his exact approvals, rejections, and overrides in
+`feedback/<slug>.md`. Distill only proven standing preferences into
+`EDITORIAL-MEMORY.md`; keep one-off edits as provisional examples until Kit
+makes them general or the same pattern appears in a second post.
+
+Before beginning a new post, read `VOICE.md`, `RUBRIC.md`,
+`EDITORIAL-MEMORY.md`, the three most recent approved posts, and any relevant
+feedback records. This lets the process improve without turning every edit into
+another permanent instruction.
+
 ### Stage 2.5 — why an editing seat exists
 
 `editor-barry` is the **only agent permitted to change the text.** The six
@@ -148,9 +161,11 @@ content-pipeline/
 ├── VOICE.md      standing authority — real-Kit markers, AI tells,
 │                 disclosure boundaries, mechanical conventions
 ├── RUBRIC.md     standing authority — six seats, scales, gate, loop guards
+├── EDITORIAL-MEMORY.md  distilled lessons from Kit's decisions
 ├── interviews/   verbatim transcripts (typos intact — do not clean)
 ├── drafts/       drafts + traceability tables
 ├── reviews/      every scoring round, archived
+├── feedback/     exact rejected/approved text and Kit's reasons
 └── social/       platform copy, drafted not posted
 ```
 
