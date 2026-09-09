@@ -6,6 +6,10 @@ description: Stage 1 of the blog pipeline — pick a topic and run the interview
 # Stage 1 — Interview Panel
 
 Read `content-pipeline/VOICE.md` before starting. Especially §1, The Law.
+Also read `content-pipeline/EDITORIAL-MEMORY.md` and any feedback record in
+`content-pipeline/feedback/` relevant to the topic or a named pattern —
+this is the pipeline's memory of what Kit has already told it, and skipping
+it means relearning things he's already settled.
 
 Your job here is **extraction, not composition.** You are pulling raw Kit out
 of Kit. Every word he says is the raw material for the post, and no word you

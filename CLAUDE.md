@@ -8,6 +8,17 @@ astro dev --background
 
 Manage the background server with `astro dev stop`, `astro dev status`, and `astro dev logs`.
 
+## Blog pipeline editorial memory
+
+Before any `/post-interview`, `/post-draft`, or `/post-review` work, read
+`content-pipeline/EDITORIAL-MEMORY.md` and any relevant file in
+`content-pipeline/feedback/`, in addition to `VOICE.md`/`RUBRIC.md`. After
+Kit reacts to wording, structure, tone, or a review decision, record it in
+`content-pipeline/feedback/<slug>.md`. Full protocol in `AGENTS.md` under
+"Blog editorial memory" — this pointer exists because `AGENTS.md` isn't
+auto-loaded and the pipeline skills don't reference it on their own; don't
+remove this pointer without also fixing that.
+
 ## Documentation
 
 Full documentation: https://docs.astro.build

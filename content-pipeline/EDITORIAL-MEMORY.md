@@ -43,6 +43,8 @@ posts.
 | Pattern | Evidence | Status |
 |---|---|---|
 | Keep a paragraph on one connected thought when a sudden turn is already handled by the following section. | `feedback/four-more-hours-of-lunch.md` | One post; provisional |
+| When the true story is genuinely scattered, a sub-8 Narrative score can be acceptable under G6 rather than spending rounds chasing a felt turning-point beat that isn't in the transcript — only after asking Kit whether the missing beat actually exists. | `feedback/adhd-productivity.md` | One post; provisional |
+| When Voice flags the same paragraph as sanded across multiple rounds, replace the paraphrase with the transcript's actual run-on phrasing instead of rewriting the paraphrase again. | `feedback/adhd-productivity.md` | One post; provisional, not yet Kit-confirmed |
 
 ## How to capture feedback
 

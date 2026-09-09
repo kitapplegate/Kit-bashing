@@ -5,7 +5,10 @@ description: Stage 2 of the blog pipeline — write a Kit Bashing draft from the
 
 # Stage 2 — Drafting
 
-**Read `content-pipeline/VOICE.md` §1 before you touch anything.**
+**Read `content-pipeline/VOICE.md` §1 before you touch anything.** Also
+read `content-pipeline/EDITORIAL-MEMORY.md` and any feedback record in
+`content-pipeline/feedback/` relevant to this post or a pattern it names —
+standing decisions there override provisional guesses.
 
 > **Facts are locked. Prose is free. Don't sand the lurch.**
 

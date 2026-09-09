@@ -6,7 +6,17 @@ description: Stage 3 of the blog pipeline — run the six-seat editor panel agai
 # Stage 3 — The Editor Panel
 
 Read `content-pipeline/RUBRIC.md` before starting. It is the authority on
-scoring, the gate, and the loop guards.
+scoring, the gate, and the loop guards. Also read
+`content-pipeline/EDITORIAL-MEMORY.md` and any feedback record in
+`content-pipeline/feedback/` relevant to this post — a pattern already
+settled there shouldn't cost another round to rediscover.
+
+Whenever Kit reacts to a review decision, a score, or a piece of wording
+during this stage — approves, rejects, overrides a gate, or explains a
+judgment call — record it in `content-pipeline/feedback/<slug>.md` before
+moving on, per the template in `content-pipeline/feedback/README.md`. This
+is the write side of the pipeline's memory; skipping it is how the same
+notes end up getting rediscovered post after post.
 
 ---
 
