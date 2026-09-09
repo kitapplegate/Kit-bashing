@@ -1,5 +1,82 @@
 # Session Log
 
+## 2026-09-09 19:29
+
+**Summary:** Two unrelated threads. First, iterated Kit's LinkedIn About section and a
+separate LinkedIn feed post (`content-pipeline/drafts/linkedin-profile-draft.md`,
+gitignored per line 34 of `.gitignore` — LinkedIn-only content stays off the public
+repo) through many small rounds of his own hand-edits and corrections (Jarvis→Z4nn-style
+fact fixes, tone requests, a merge of two paragraphs, cutting a line, adding one back).
+No git activity for this thread; it's chat/file work only. Second, ran the full blog
+pipeline end to end for a new post, "Trying to be more productive while not being
+productive at all" (slug `adhd-productivity`): `/post-interview` captured a 17-question,
+~3,300-word transcript on ADHD and productivity; `/post-draft` was done for the first
+time by actually shelling out to the Codex CLI (`codex exec -s workspace-write`,
+scoped to this repo) instead of Claude authoring prose directly, per Kit's request and
+the fit scoped out in the 2026-09-02 session below; `/post-review` ran the full six-seat
+panel for real, blind, four rounds (Kit explicitly asked for round 4 past the normal
+3-round cap) — scores climbed 32→36→49→51 across rounds but the formal gate never
+cleanly passed, because Narrative stayed capped at 6-7 the whole way: the panel kept
+asking for a "shown" disaster beat (a specific remembered moment the day was gone) that
+genuinely isn't in the transcript, and G1 forbids inventing one. Kit exercised G6 to
+approve publish anyway, explicitly reasoning "narrative is going to be bad because the
+blog was so disjointed" — logged as a provisional pattern. He also caught two boundary
+items mid-interview that needed his explicit sign-off (an ex-wife mention, and
+medication details that contradicted a boundary he'd stated earlier in the same
+interview) and overrode `VOICE.md` §4 for this post only: "leave the ex wife, medication
+and ADHD in." Published: pushed `65fed5a` (see below) and `f8b6b82`, merged a remote
+README commit that landed mid-session (`c1aa9e9`→`eb3607b`, no conflicts), deploy run
+`34408264499` succeeded, and the live post/blog-index/`rss.xml` were all fetched and
+checked directly rather than assumed from a green build. Root-cause finding along the
+way, triggered by Kit asking "why isn't the writing getting better, is it not learning
+what works": `EDITORIAL-MEMORY.md` and `content-pipeline/feedback/`, built 2026-09-02
+(`00589a3`), had never actually been read or written by any session, including the
+earlier stages of this one — the read/write protocol lived only in `AGENTS.md`, which
+isn't auto-loaded, and none of the three pipeline skills referenced it. Fixed in
+`65fed5a`: `CLAUDE.md` now points at the protocol, and `post-interview`/`post-draft`/
+`post-review` each got an explicit read step (`post-review` also an explicit write-
+feedback step). Wrote `content-pipeline/feedback/adhd-productivity.md` capturing this
+session's real decisions and promoted two provisional patterns into
+`EDITORIAL-MEMORY.md`. Also caught and archived a self-inflicted gap before closing:
+round 4's review scores were never written to `content-pipeline/reviews/` amid the
+back-and-forth — reconstructed and committed separately as `3e1e687`.
+
+**Status:**
+- Post 7 published and live — **verified in the real environment**: post text, blog
+  index listing, and `rss.xml` entry all fetched and confirmed directly.
+- Six-seat `/post-review` panel — **verified in the real environment** for the first
+  time end-to-end (previously only exercised 2026-08-20 on `robot-overlords`, which was
+  abandoned before a clean pass). The formal 5-of-6-at-8-10 gate did not pass; publish
+  proceeded under Kit's explicit G6 override, which is itself now the tested path for
+  "the panel says almost-but-not-quite and Kit disagrees with the shortfall."
+- Codex CLI as the `/post-draft` drafter — **verified in the real environment**, first
+  real run (2026-09-02's session had only scoped this as a good theoretical fit).
+- `main` push to `origin` — **verified in the real environment**; the divergence
+  described in `VERIFICATION.md`'s pre-2026-09-09 version is resolved.
+- Editorial-memory wiring fix — **implemented, not yet verified in actual use**. Applied
+  manually mid-session after Kit asked about it, not because a skill's new instruction
+  caught it on its own — the instruction didn't exist yet when this session's earlier
+  stages ran. See `NEXT.md`.
+- `/post-social` — offered for `adhd-productivity`; Kit went straight to `/run-exit`
+  without answering. Still never run for any shipped post.
+
+**Next:** Confirm, the first time a future session runs any `/post-*` pipeline command,
+that it reads `EDITORIAL-MEMORY.md`/`feedback/` and writes a feedback entry on its own —
+don't just ask it and accept a yes, check that it actually happened. See `NEXT.md`.
+
+**Open tasks:**
+- [ ] next — verify the editorial-memory wiring actually self-triggers on the next
+      pipeline run (see `NEXT.md`)
+- [ ] blocked-by-Kit — delete or keep the two untracked
+      `content-pipeline/drafts/more-than-a-super-google*.md` leftovers (carried forward
+      from the 2026-09-02 `NEXT.md`, still unresolved, still untouched)
+- [ ] not-yet-verified — `/post-social` for `adhd-productivity`, if Kit still wants it
+
+**Deferred:** The LinkedIn About/feed-post work is finished from Kit's side (his last
+message was approving the merged Coast Guard paragraph and the tightened math
+paragraph) but lives only in a gitignored file and this chat — nothing to commit, no
+further action unless he asks for another pass.
+
 ## 2026-09-02 18:30
 
 **Summary:** Short session, mostly conversational. Kit asked how he'd get OpenAI's Codex
