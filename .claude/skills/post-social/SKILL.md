@@ -36,16 +36,29 @@ punchiest.
 The danger zone. LinkedIn's native voice is the precise opposite of Kit's, and
 the pull toward it is strong.
 
+**Required: hook first, question last (standing, 2026-09-15).** Every LinkedIn
+post **opens with a one-sentence hook** and **ends with a question to the
+reader**. Kit's ruling, 2026-09-15: social media posts only, not the blog, and
+LinkedIn only, not X or Bluesky. Blog posts are unaffected; `VOICE.md` still
+governs them.
+
+- The hook is one sentence standing alone as the first paragraph. That single
+  line is required, and it is not the "stacked one-sentence paragraphs" ban
+  below.
+- The question asks for a real answer from the reader's own experience
+  ("What are you using agents vs. scripts for?"), not "Agree?" or "Thoughts?"
+
 Banned outright here, on top of `VOICE.md` §6:
 
-- One-sentence paragraphs stacked for dramatic effect
+- One-sentence paragraphs stacked for dramatic effect (the single opening
+  hook is required, not banned)
 - "Here's what I learned:" / "3 takeaways:" / "The lesson?"
 - A hook line followed by "..." to force a *see more* click
-- Asking the audience a question at the end to farm comments
 - Any sentence that could appear in a motivational post
 
-What it should be: a chunk of the actual story, told the way he told it, and a
-link. That's it. If it reads like a LinkedIn post, it's wrong.
+What it should be: a one-sentence hook, a chunk of the actual story told the
+way he told it, a real question, and a link when there's a post to link. If it
+reads like a LinkedIn post, it's wrong.
 
 ### X (280 characters)
 

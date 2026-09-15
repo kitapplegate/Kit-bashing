@@ -34,6 +34,18 @@ check.
 **Source:** `feedback/four-more-hours-of-lunch.md`, where Kit rejected a Truth
 veto over the phrase "Google account."
 
+### LinkedIn posts open with a hook and end with a question
+
+Every LinkedIn post opens with a one-sentence hook and ends with a question
+that asks the reader for a real answer. LinkedIn only: X and Bluesky copy and
+blog posts are unaffected, and blog posts still follow `VOICE.md` with no
+closing question to the audience.
+
+**Source:** Kit, 2026-09-15, while drafting `social/agents-vs-scripts.md`:
+"this is only for social media post not the blog post," then narrowed to
+"linkedin only." Supersedes the old `/post-social` LinkedIn ban on ending with
+an audience question.
+
 ## Provisional patterns
 
 These are examples to consult, not standing laws. Promote one only when Kit
