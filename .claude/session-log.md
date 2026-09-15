@@ -1,5 +1,30 @@
 # Session Log
 
+## 2026-09-15 14:10
+
+**Summary:** No blog post this session: drafted a LinkedIn-only hot take, "agents vs.
+scripts," for Kit to post himself. Kit isn't ready to reveal on LinkedIn that he's going
+independent (Marzipan Solutions), so early drafts that read like a consultant's pitch
+were rewritten as a hobbyist building agents at home. A draft that followed `VOICE.md`
+strictly (no bullets, no closing question) was rejected as hard to follow and not his
+voice; Kit asked for short bullets, cut a tips section, and wrote the final version
+himself, with Claude fixing only typos. Saved to `content-pipeline/social/agents-vs-scripts.md`,
+which is gitignored because this repo is public and the file's notes mention Marzipan.
+Kit then ruled that LinkedIn posts (only LinkedIn, not X, Bluesky, or blog posts) always
+open with a one-sentence hook and end with a real question: `/post-social` SKILL.md and
+`EDITORIAL-MEMORY.md` updated in `282a86b`.
+
+**Status:**
+- LinkedIn hook + question rule -- **implemented**: `282a86b`; no `/post-social` run has used it yet.
+- `agents-vs-scripts` LinkedIn copy -- **implemented**: saved + ignored (`git check-ignore` confirmed); Kit posts it manually, not observed live.
+
+**Open tasks:**
+- [ ] next -- confirm the editorial-memory wiring self-triggers on the next `/post-*` run (see `NEXT.md`).
+- [ ] blocked-by-Kit -- keep or delete the untracked `drafts/more-than-a-super-google*.md` leftovers.
+- [ ] blocked-by-Kit -- gitignore `feedback/linkedin-career-change.md` too? It's LinkedIn-only material, currently untracked and not ignored.
+
+**Deferred:** a `feedback/agents-vs-scripts.md` record of Kit's rejections (offered, not answered).
+
 ## 2026-09-09 19:29
 
 **Summary:** Two unrelated threads. First, iterated Kit's LinkedIn About section and a
