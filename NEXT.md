@@ -1,7 +1,7 @@
 # Next
 
-**Action:** Remove Kit's unannounced business name from the public repo. It's in `.claude/session-log.md`, the 2026-09-15 entry ("going independent (...)", from `cfca6c1`), which reached `origin/main` on 2026-09-16.
-**Why now:** `kitapplegate/Kit-bashing` is PUBLIC, so the name is readable on GitHub right now.
-**Start here:** Kit picks one: (a) reword that line and push a normal commit (the name stays in git history), or (b) rewrite history and force-push `main` (destructive, needs his explicit OK).
-**Verify with:** `git show origin/main:.claude/session-log.md`, then check by eye that the 2026-09-15 entry no longer names the business. For (b), `git log --all -S"<name>"` should also be empty.
-**Watch out for:** Don't type the name into any tracked file, including handoff notes. Before any push, check staged diffs for it.
+**Action:** On the next `/post-draft` or `/post-review` run, confirm the 2026-09-16 rule changes (`a4276c7`) actually take effect.
+**Why now:** They're implemented only. `people-mad-at-ai` burned two panels on problems these rules are meant to prevent.
+**Start here:** `.claude/skills/post-draft/SKILL.md` steps 2c/2d and the self-check; `.claude/skills/post-review/SKILL.md` "Closed questions stay closed".
+**Verify with:** the transcript gets a `## Closed questions` section; no seat re-asks a closed item; the voice, slop and reader agents run on Sonnet; the review stops at 2 rounds.
+**Watch out for:** Don't rewrite Kit's claims to fit sources the pipeline finds. Link them or cut them.

@@ -2,7 +2,7 @@
 
 ## 2026-09-16 21:03
 
-**Summary:** Took one post the whole way through the pipeline: "I can see why people are mad at AI" (`people-mad-at-ai`), from an inbox capture in the Brain vault. Kit asked that his business stay off the topic list. Two blind review rounds failed (34 → 37). Both Truth vetoes were the drafter's fault: first unlinked data-center claims, then Kit's eminent-domain claim reworded to fit a PBS source (cut at Kit's request). A third ask about the talk builder frustrated Kit over token burn, so he approved pipeline changes (`a4276c7`): a `## Closed questions` section in transcripts, sources never rewrite Kit's claims, a real pre-panel self-check, a 2-round cap, and Sonnet on voice/slop/reader. Published as `4826590`. **Problem found at exit:** that push also sent four older local commits, including `cfca6c1`, whose session-log entry names Kit's unannounced business in this PUBLIC repo.
+**Summary:** Took one post the whole way through the pipeline: "I can see why people are mad at AI" (`people-mad-at-ai`), from an inbox capture in the Brain vault. Kit asked that his business stay off the topic list. Two blind review rounds failed (34 → 37). Both Truth vetoes were the drafter's fault: first unlinked data-center claims, then Kit's eminent-domain claim reworded to fit a PBS source (cut at Kit's request). A third ask about the talk builder frustrated Kit over token burn, so he approved pipeline changes (`a4276c7`): a `## Closed questions` section in transcripts, sources never rewrite Kit's claims, a real pre-panel self-check, a 2-round cap, and Sonnet on voice/slop/reader. Published as `4826590`. **Problem found at exit:** that push also sent four older local commits, including `cfca6c1`, whose session-log entry names Kit's unannounced business in this PUBLIC repo. Kit's call at exit: "I dont care" — left as is.
 
 **Status:**
 - Post 8 live — **verified in the real environment**: deploy `35168643725` succeeded; curl showed 200, post text, index, and rss.
@@ -10,9 +10,7 @@
 - Editorial-memory loop — **verified in the real environment**: read at each stage; `feedback/people-mad-at-ai.md` written.
 
 **Open tasks:**
-- [ ] next — remove the unannounced business name from public `origin/main` (see `NEXT.md`).
-- [ ] blocked-by-Kit — plain fix commit vs. history rewrite plus force-push.
-- [ ] not-yet-verified — the new rules (closed questions, 2-round cap, Sonnet seats) on the next `/post-*` run.
+- [ ] next — confirm the new rules (closed questions, 2-round cap, Sonnet seats) on the next `/post-*` run (see `NEXT.md`).
 - [ ] blocked-by-Kit — keep or delete the untracked `drafts/more-than-a-super-google*.md`; gitignore `feedback/linkedin-career-change.md`?
 
 **Deferred:** `/post-social` for `people-mad-at-ai` (offered, not answered).
