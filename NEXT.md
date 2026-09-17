@@ -1,7 +1,7 @@
 # Next
 
-**Action:** The next time `/post-interview`, `/post-draft`, or `/post-review` runs, confirm the editorial-memory wiring (`65fed5a`) fires on its own: the session reads `content-pipeline/EDITORIAL-MEMORY.md` before working, and writes a `content-pipeline/feedback/<slug>.md` entry when Kit reacts.
-**Why now:** Still never exercised by a cold session; the 2026-09-15 LinkedIn work didn't run any `/post-*` stage.
-**Start here:** `CLAUDE.md` "Blog editorial memory" section, and the read/write steps in `.claude/skills/post-*/SKILL.md`.
-**Verify with:** the session's own tool calls show a Read of `EDITORIAL-MEMORY.md` and a created/updated `feedback/` file. Don't accept a "yes I checked" without the read.
-**Watch out for:** LinkedIn-only material goes in `.gitignore` one slug per line before any commit; this repo is public.
+**Action:** Remove Kit's unannounced business name from the public repo. It's in `.claude/session-log.md`, the 2026-09-15 entry ("going independent (...)", from `cfca6c1`), which reached `origin/main` on 2026-09-16.
+**Why now:** `kitapplegate/Kit-bashing` is PUBLIC, so the name is readable on GitHub right now.
+**Start here:** Kit picks one: (a) reword that line and push a normal commit (the name stays in git history), or (b) rewrite history and force-push `main` (destructive, needs his explicit OK).
+**Verify with:** `git show origin/main:.claude/session-log.md`, then check by eye that the 2026-09-15 entry no longer names the business. For (b), `git log --all -S"<name>"` should also be empty.
+**Watch out for:** Don't type the name into any tracked file, including handoff notes. Before any push, check staged diffs for it.

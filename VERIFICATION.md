@@ -22,6 +22,14 @@ served page, the post is listed on the blog index with the right title/date, and
 appears as the newest item in `rss.xml` with the approved description.
 URL: https://kitapplegate.github.io/Kit-bashing/blog/adhd-productivity/
 
+## Post 8 — "I can see why people are mad at AI" — live
+
+**Verified in the real environment**, 2026-09-16. `npm run build` passed (13 pages), pushed
+`4826590` to `main`, deploy run `35168643725` succeeded (`gh run watch --exit-status`).
+Checked with `curl`: HTTP 200 on the post URL, served HTML contains "Mobile Bay" and
+"lurk in the shadows like a creeper," title on the blog index, slug in `rss.xml`.
+URL: https://kitapplegate.github.io/Kit-bashing/blog/people-mad-at-ai/
+
 ## Six-seat editor panel gate (`/post-review`)
 
 **Verified in the real environment**, 2026-09-09, on the `adhd-productivity` draft —
@@ -42,6 +50,17 @@ Confirmed working end-to-end (Codex produced both the draft and its fact ledger,
 correct pipeline format) — first time this repo's pipeline has used an external CLI
 agent for the drafting stage.
 
+**2026-09-16, `people-mad-at-ai`:** two blind rounds, both FAIL. Round 1:
+6/8/8/6/6/FAIL (34). Round 2: 7/7/8/7/8/FAIL (37). Both Truth vetoes were real: outside
+claims with no links, then Kit's claim reworded to fit a found source. No round 3; the
+drafter hand-applied the notes and Kit approved under G6.
+
+## Pipeline rule changes of 2026-09-16 (`a4276c7`)
+
+**Not yet verified.** These rules are implemented only and haven't run in any session:
+`## Closed questions` in transcripts, the post-draft 2d source rule, the pre-panel
+self-check, the 2-round cap, and `model: sonnet` on editor-voice/slop/reader.
+
 ## `main` push to `origin`
 
 **Verified in the real environment**, 2026-09-09. The divergence described above is
@@ -57,7 +76,13 @@ post as of 2026-09-09.
 
 ## Editorial memory feedback loop (`EDITORIAL-MEMORY.md` / `content-pipeline/feedback/`)
 
-**Not yet verified in actual use.** Built 2026-09-02 (`00589a3`) but the read/write
+**Verified in actual use**, 2026-09-16. A cold `/post-interview` → `/post-draft` →
+`/post-review` → `/post-publish` run read `EDITORIAL-MEMORY.md` and `feedback/` at the
+start of each stage because the skill steps say to. It wrote
+`content-pipeline/feedback/people-mad-at-ai.md` as Kit reacted and added three standing
+decisions to `EDITORIAL-MEMORY.md`.
+
+*Earlier status, kept for history:* **Not yet verified in actual use.** Built 2026-09-02 (`00589a3`) but the read/write
 protocol lived only in `AGENTS.md`, which nothing was actually reading — confirmed today
 that no session (including today's, until midway through) had ever consulted it or
 written to it. Fixed 2026-09-09 (`65fed5a`): `CLAUDE.md` now points to the protocol, and
