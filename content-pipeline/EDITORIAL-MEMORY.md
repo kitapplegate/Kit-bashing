@@ -46,6 +46,33 @@ closing question to the audience.
 "linkedin only." Supersedes the old `/post-social` LinkedIn ban on ending with
 an audience question.
 
+### Answered questions are closed
+
+Once Kit answers a question, including "I don't remember," it goes under
+`## Closed questions` at the bottom of the transcript and is never asked
+again at any stage. The review loop drops seat notes that re-ask one.
+
+**Source:** `feedback/people-mad-at-ai.md`, 2026-09-16, the third time the
+pipeline asked what the talk builder did when it broke.
+
+### Sources back Kit's claims; they don't rewrite them
+
+When the pipeline finds a source, link it to Kit's claim as he said it. If
+the source only supports a narrower version, cut the claim or ask him. Never
+reword his claim to fit the source in his voice.
+
+**Source:** `feedback/people-mad-at-ai.md`. The eminent-domain line was
+narrowed to a PBS article, Truth vetoed it, and Kit said "just cut it."
+
+### Aim to pass round 1
+
+The drafter's self-check in `/post-draft` is the pre-panel gate: tell count
+on its own sentences, no tidied hedges, every scene's point matching its
+bridge. Panels are capped at 2 rounds, and Voice/Slop/Reader run on Sonnet.
+
+**Source:** Kit, 2026-09-16: "you should be getting on the 1st one now
+figure it out," then "yes make those edits."
+
 ## Provisional patterns
 
 These are examples to consult, not standing laws. Promote one only when Kit

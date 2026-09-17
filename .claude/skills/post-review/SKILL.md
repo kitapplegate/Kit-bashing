@@ -70,10 +70,29 @@ Ask him: what happened, what someone said, what he thinks, what he consents to.
 anything phrased in the pipeline's own vocabulary. Make those calls, tell him what
 you decided, and let him overrule at the publish gate under G6.
 
+### Closed questions stay closed
+
+The transcript's `## Closed questions` section (see `/post-draft` step 2c)
+lists everything Kit has already answered, including "I don't remember."
+**Drop any seat note or question that re-asks one. Don't relay it, don't
+reword it, and don't count it as blocking.** When Kit answers a new question
+in this stage, add it to that section in the same turn you append his answer.
+Kit, 2026-09-16, the third time a panel asked what the talk builder did when
+it broke: *"we're burning tokens because of this ... you should be getting on
+the 1st one now figure it out."*
+
 ## Step 1 — Convene the panel
 
 Launch all six seats **in parallel, in a single message**, each with the draft
-path and the transcript path:
+path and the transcript path. Tell each seat: *"Don't raise anything listed
+under `## Closed questions` at the bottom of the transcript. Kit has already
+answered it."* That is not round information, so it doesn't break blind
+scoring.
+
+Seat models are set in each agent's frontmatter. Voice, Slop and Reader run
+on Sonnet, because their work is mostly comparing the draft against a
+checklist. Narrative, Substance and Truth stay on the default model. Kit
+approved this 2026-09-16 to cut token spend. Don't override it per run.
 
 - `editor-narrative`
 - `editor-voice`
@@ -130,25 +149,37 @@ not publish.** Human approval is a separate stage and it is not optional —
 
 Check the loop guards **before** starting another round:
 
-1. **Round 3 already done?** Stop. Hand Kit the blocking notes and let him
-   take it by hand. Do not start round 4.
+1. **Round 2 already done?** No round 3 panel. Apply the round 2 notes
+   directly, re-run the `/post-draft` self-check and the Step 0 traceability
+   grep by hand, archive what changed, and hand the draft to Kit for
+   `/post-publish` under G6. *(Cap lowered from 3 to 2 by Kit, 2026-09-16,
+   after `people-mad-at-ai` spent two ~270k-token rounds and he called the
+   loop ridiculous.)*
 2. **Did total score fail to improve over last round?** Stop immediately. The
-   panel is oscillating, not converging. Say so plainly.
+   panel is oscillating, not converging. Say so plainly, then take the same
+   hand-finish path as guard 1.
 
-If both guards clear, the rewrite is **still subtract-only** — reread
-`content-pipeline/drafts/` skill rules. You may cut and reorder in response to
-notes. You may not write.
+If both guards clear, rewrite under the amended Law in `VOICE.md` §1: prose is
+free, facts are locked. `editor-barry` or the drafter may write, cut and
+reorder in response to notes. *(An older version of this step said the rewrite
+was subtract-only. That rule was retired 2026-08-03 and this line had drifted.)*
 
-Most blocking notes will resolve one of three ways:
+Most blocking notes will resolve one of four ways:
 
 - **Cut it** — the note says a paragraph does no work. Delete it.
 - **Reorder** — the note says the structure is wrong. Move things.
-- **Ask Kit** — the note needs material that isn't in the transcript. Collect
-  these into a short list and have him dictate more (Win+H). Append his new
-  answers to the transcript, then draft again.
+- **Rewrite it** — the note is about wording, rhythm or clarity, and the fix
+  uses facts already in the transcript.
+- **Ask Kit** — the note needs material that isn't in the transcript *and*
+  isn't closed. Ask each open item once, in a short list with at most three
+  questions. Append his answers to the transcript and add them to `## Closed
+  questions`, then draft again. If he says he doesn't remember, the draft
+  lives without it.
 
-**Never resolve a note by writing a sentence.** A seat asking for "a more
+**Never resolve a note by inventing a fact.** A seat asking for "a more
 concrete detail here" is asking Kit a question, not asking you to supply one.
+The same goes for sources: never reword Kit's claim to match a source you
+found (`/post-draft` step 2d).
 Fabrication is the failure mode this whole pipeline exists to prevent, and it
 enters right here, because invented details score *well*.
 

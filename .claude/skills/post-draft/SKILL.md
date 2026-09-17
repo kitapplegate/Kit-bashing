@@ -62,6 +62,22 @@ using it for anything else. Do not relay it to `editor-barry` or write it into
 the fact ledger from memory — an answer that only exists in chat does not
 exist for the truth seat.
 
+**2c. Closed questions.** When Kit answers a question, including "I don't
+remember," add a one-line entry to a `## Closed questions` section at the
+bottom of the transcript: the topic, his answer in a few words, and the
+transcript line. A closed question is never asked again at any stage. Kit's
+ruling, 2026-09-16, after `people-mad-at-ai` asked him a third time what the
+talk builder did when it broke: *"this is like the third thing I've asked
+about this build like come on ... we're burning tokens because of this."*
+
+**2d. Outside sources back Kit's claim; they never replace it.** If you find
+a source for something Kit said, link it to his claim as he said it. If the
+source only supports a narrower or different version, **cut the claim** or ask
+Kit whether the narrower version is what he meant. Never rewrite his claim to
+fit the source and then present it in his voice. Same post: "AI companies ...
+eminent domain" got reworded to "power companies took land for power lines"
+to match a PBS article, and Truth vetoed it. It was right to.
+
 **3. Build the narrative.** Scene first, usually. You may reorder freely for
 chronology and sense — the Narrative seat will tell you if the middle runs
 backwards, and now you can actually fix it.
@@ -111,7 +127,8 @@ one line each. Not sentence-level. Enough that a reviewer can find it.
 Who, what the post says about them, and where that came from. G2 check.
 
 ## Open questions for Kit
-Facts you wanted and didn't have. Never fill these yourself.
+Facts you wanted and didn't have. Never fill these yourself. Never list
+anything already under `## Closed questions` in the transcript.
 ```
 
 Verify this ledger against the transcript before shipping it. Reviewers are
@@ -119,14 +136,33 @@ instructed to treat it as adversarial input, because it has been wrong before.
 
 ---
 
-## Self-check
+## Self-check — run it for real before handing off
 
-- [ ] Every fact traces to the transcript
+This is the pre-panel gate, not a formality. Every problem you catch here
+saves a six-seat round (~270k tokens). Kit, 2026-09-16: *"you should be
+getting on the 1st one now."* Go through the draft paragraph by paragraph:
+
+- [ ] Every fact traces to the transcript. Grep each ledger citation; it
+      must resolve to a line with Kit's words on it.
+- [ ] No claim of Kit's was reworded to fit a source I found (2d)
 - [ ] No real person is described as saying or doing anything they didn't
-- [ ] My own sentences contain none of the seven tells
+- [ ] **Tell count on my own sentences**: punchline tax, dismiss-then-concede,
+      tidy simile, negate-then-correct, self-annotation, em dashes, even
+      rhythm. List each hit with its line, and fix it, before handing off.
+      Pay closest attention to bridges and to any sentence that sums up the
+      paragraph before it.
+- [ ] No hedge or contradiction of his got tidied into a clean position
+      (e.g. "not necessarily X ... both" becoming "not X, but Y")
 - [ ] His good lines are untouched
-- [ ] My sentences aren't noticeably smoother than his
+- [ ] My sentences aren't noticeably smoother than his, and no list of mine
+      comes out as an even three-part summary
+- [ ] Every paragraph's point matches what its story actually shows. A
+      scene that proves something else needs Kit's words for the bridge,
+      not mine.
+- [ ] A cold reader meets who Kit is (role, background) before a claim that
+      depends on it
 - [ ] Some paragraphs are flat and land nothing — good
+- [ ] Nothing in "Open questions" is already closed
 
 Report to Kit: word count, what you rewrote and why, what you wrote from
 scratch, and any fact you wanted and didn't have.

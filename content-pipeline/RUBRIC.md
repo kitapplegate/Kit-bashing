@@ -44,11 +44,14 @@ Plus one override:
 
 ## Loop guards
 
-The rewrite loop is the most dangerous part of this pipeline. It has three
+The rewrite loop is the most dangerous part of this pipeline. It has these
 brakes:
 
-1. **Max 3 rounds.** After the third failed round, stop and hand Kit the
-   blocking notes. Do not keep grinding.
+1. **Max 2 rounds.** After the second failed round, don't convene a third
+   panel. Apply the notes directly, re-run the drafter self-check and the
+   traceability grep, and hand the draft to Kit's publish gate. *(Lowered
+   from 3 by Kit, 2026-09-16, after a six-seat round was costing ~270k
+   tokens.)*
 2. **No-improvement detector.** If a round's total score doesn't beat the
    previous round, stop immediately. The panel is oscillating, not converging.
 3. **Blind scoring.** Seats get the draft and the transcript. Never prior
@@ -70,6 +73,9 @@ check in §7 is the primary defense; these guards are the backstop.
    the em-dashes" or "break this pattern," don't replace it with a different
    pattern at the same rate. Fix the flagged instances and leave the rest of
    the draft's texture alone.
+5. **Closed questions stay closed.** Anything under `## Closed questions`
+   in the transcript, including "I don't remember," is never asked again
+   and never counts against a score.
 
 ---
 
