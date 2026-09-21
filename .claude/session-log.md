@@ -1,5 +1,19 @@
 # Session Log
 
+## 2026-09-21 17:40
+
+**Summary:** No blog post. Kit wanted a LinkedIn post but had no topic. I offered four, and he picked Jev (TypeSafe's System One model), based on the work in `C:\AI\two14-lab` (`9b2bc7a`). There, Jev re-judged 1,438 citations: it matched Luna 74% of the time, Luna matches itself 80%, and they matched 90% when Jev was ≥0.8 confident. Two14 sits on the unannounced business's subdomain, so the first draft left out the product name, the domain, and the real user. Kit went further: call it only "an app in development", don't say what it does, make it shorter, and use his tone. He then asked for more on what Jev is and how it's marketed. That paragraph uses TypeSafe's own wording from their skill (v0.5.7); I didn't check their live website. He approved the ~1,000-char version and is posting it himself. Draft and feedback are gitignored (`041a37f`).
+
+**Status:**
+- Jev LinkedIn copy — **implemented**: `content-pipeline/social/jev-citation-check.md`; Kit posts it manually, not observed live.
+- Editorial memory — **implemented**: `feedback/jev-citation-check.md` records his two revisions and the approval.
+
+**Open tasks:**
+- [ ] next — confirm the 2026-09-16 rules on the next `/post-*` run (see `NEXT.md`).
+- [ ] blocked-by-Kit — keep or delete untracked `drafts/more-than-a-super-google*.md`; gitignore `feedback/linkedin-career-change.md`?
+
+**Deferred:** a follow-up post once Kit has graded the 30 blind Jev-vs-Luna cases.
+
 ## 2026-09-16 21:03
 
 **Summary:** Took one post the whole way through the pipeline: "I can see why people are mad at AI" (`people-mad-at-ai`), from an inbox capture in the Brain vault. Kit asked that his business stay off the topic list. Two blind review rounds failed (34 → 37). Both Truth vetoes were the drafter's fault: first unlinked data-center claims, then Kit's eminent-domain claim reworded to fit a PBS source (cut at Kit's request). A third ask about the talk builder frustrated Kit over token burn, so he approved pipeline changes (`a4276c7`): a `## Closed questions` section in transcripts, sources never rewrite Kit's claims, a real pre-panel self-check, a 2-round cap, and Sonnet on voice/slop/reader. Published as `4826590`. **Problem found at exit:** that push also sent four older local commits, including `cfca6c1`, whose session-log entry names Kit's unannounced business in this PUBLIC repo. Kit's call at exit: "I dont care" — left as is.

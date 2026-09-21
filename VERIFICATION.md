@@ -74,6 +74,10 @@ merge commit `eb3607b`, confirmed `git push origin main` succeeded.
 went straight to `/run-exit` without answering. Still has never been run for any shipped
 post as of 2026-09-09.
 
+2026-09-21: LinkedIn-only copy `social/jev-citation-check.md` drafted by hand (the
+skill wasn't invoked), hook + closing question per `282a86b`. Kit approved it and is posting it
+himself. **Not observed live.** The skill itself is still unexercised.
+
 ## Editorial memory feedback loop (`EDITORIAL-MEMORY.md` / `content-pipeline/feedback/`)
 
 **Verified in actual use**, 2026-09-16. A cold `/post-interview` → `/post-draft` →
