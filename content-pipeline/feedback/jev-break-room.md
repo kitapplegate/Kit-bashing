@@ -92,3 +92,20 @@ would not, Kit said:
 
 **Approved result:** Publish the final 1,002-word post with the Break Room wall
 screenshot.
+
+## Screenshot crop
+
+**Stage:** Post-publication correction
+
+**Rejected result:** The published Break Room screenshot included Chrome's
+browser controls, the Windows taskbar, the browser scrollbar, and the mouse
+pointer.
+
+**Kit:**
+
+> ok i dont want the screen shot to show the computer and browser
+
+**Approved direction:** Crop the screenshot to the Break Room page itself and
+remove the pointer overlay. Preserve the original app interface and text.
+
+**Status:** Approved for this post.
