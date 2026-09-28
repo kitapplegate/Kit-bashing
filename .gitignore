@@ -35,3 +35,8 @@ content-pipeline/drafts/linkedin-profile-draft.md
 content-pipeline/social/agents-vs-scripts.md
 content-pipeline/social/jev-citation-check.md
 content-pipeline/feedback/jev-citation-check.md
+
+# Social-media-only workspace (posts that stand alone, not tied to a blog
+# post). Private by default like the per-slug social lines above, per Kit,
+# 2026-09-28.
+social-media/
