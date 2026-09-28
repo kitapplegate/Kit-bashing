@@ -1,7 +1,7 @@
 # Next
 
-**Action:** Draft Wednesday's LinkedIn hot take on vibe coding, from Kit's own rough take, into `social-media/posts/vibe-coding.md`.
-**Why now:** Second post of the two-week LinkedIn test (`social-media/GROWTH.md`); a text opinion post to contrast Monday's photo post.
-**Start here:** `social-media/VOICE.md` (his one-liner + pillars), then ask Kit to talk it out: what building without knowing the code is like, what's good, what worries him, what people get wrong.
-**Verify with:** Kit approves the text and posts it; its row in `GROWTH.md`'s log gets filled in.
-**Watch out for:** Facts only from Kit. No Marzipan/business framing. LinkedIn hook first, real question last, no link, no em dashes. Also log Monday's Faux Bunny R1 numbers.
+**Action:** Get the Shortlist Bids post (`social-media/posts/shortlist-bids.md`) posted on LinkedIn Wednesday 2026-09-30, then log it in `social-media/GROWTH.md`.
+**Why now:** It's drafted and Kit approved each wording change. It's the second post of the two-week test, and vibe coding moves to Friday.
+**Start here:** Check `https://shortlistbids.com/data/bids.json` `generated_at`. It was still 2026-09-26 on Mon 09-28 because the weekday 06:00 run never fired (`gh run list -R kitapplegate/shortlistbids`). Ask Kit before triggering `gh workflow run`. Update the "206 / 178" numbers in the post if the data changes.
+**Verify with:** Kit posts it with the link in the first comment, and its row plus Faux Bunny R1's reactions/comments go into the `GROWTH.md` log.
+**Watch out for:** Check `C:\AI\Brain\LinkedIn Posts to Study.md` first and move any pasted posts into `social-media/STUDY.md` (at entry 10, rewrite Patterns). No em dashes. No Marzipan. Keep the "automation study" framing, not "tried to sell it".

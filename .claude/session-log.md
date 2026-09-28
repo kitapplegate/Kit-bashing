@@ -1,5 +1,22 @@
 # Session Log
 
+## 2026-09-28 16:36
+
+**Summary:** Social-only session. Nothing tracked changed, since `social-media/` is gitignored (`ba395e7`). The earlier log wrongly said `.gitignore` was uncommitted. Built `social-media/STUDY.md`, a file of well-performing LinkedIn posts Kit pastes in, each broken down (hook, shape, ending, steal/don't steal). It has 9 entries so far; Basia Kubicka is 3 of them, and Megan Forbell is the first likely-small account. First Patterns pass: none of the big posts ends on a life question, how-tos and lists draw the most comments, secondhand news flops even for big names, and tagging a real person is the reach move at Kit's size. Added phone capture note `C:\AI\Brain\LinkedIn Posts to Study.md` (the sweep only processes `inbox.md`/`Faux Bunny R1.md`). Drafted `posts/shortlist-bids.md` with Kit: Jev named, "automation study" framing (selling cut), GRDA spelled out, more sources coming. Wording feedback is in `feedback/shortlist-bids.md`. Found that shortlistbids.com's Monday 06:00 refresh never ran; its data is still 2026-09-26.
+
+**Status:**
+- `STUDY.md` + Brain capture note — **implemented**: files exist; phone sync not observed.
+- Shortlist Bids LinkedIn draft — **implemented**: Kit approved edits line by line; not posted.
+- Shortlist Bids weekday refresh — **not yet verified**: no `schedule` run on 09-28 per `gh run list`; live `generated_at` 2026-09-26.
+
+**Open tasks:**
+- [ ] next — Post Shortlist Bids Wed 09-30 after confirming fresh data; log it + Faux Bunny numbers in `GROWTH.md`.
+- [ ] blocked-by-Kit — Trigger/diagnose the Shortlist Bids refresh (offered twice, unanswered).
+- [ ] blocked-by-Kit — Gitignore or move social-only untracked files in `content-pipeline/`; keep/delete `drafts/more-than-a-super-google*.md`.
+- [ ] not-yet-verified — 2026-09-16 pipeline rules (`a4276c7`) on the next `/post-draft`/`/post-review` run.
+
+**Deferred:** Vibe-coding post to Friday; the old/new-loop shape from STUDY entry 6 is a candidate.
+
 ## 2026-09-28 07:05
 
 **Summary:** Started a social-media track separate from the blog: posts that stand alone with no blog link, to build Kit's personal brand before the business (Marzipan, still unnamed publicly) launches. Created `social-media/` (gitignored in `.gitignore`, the only tracked change, uncommitted per Kit) with `README.md`, `VOICE.md` (Kit's bio line in his words: "Coast Guard vet. AI builder, hardware hacking, vibe coding into bliss. Still figuring out the next chapter out loud", plus pillars and hard lines), and `GROWTH.md`. Kit said no post has had reactions; baseline is 309 LinkedIn connections and 5 X followers, so the diagnosis is reach, not writing. `GROWTH.md` sets a two-week LinkedIn-only test (3 posts/week, photos, no links, easy questions, 15 min/day commenting, ~10 connection requests/day; X replies only). First post, Faux Bunny R1, went up on LinkedIn ~07:00 with a desk photo and a screenshot pulled off the Moto via adb (git-bash needs `MSYS_NO_PATHCONV=1`). Old R1 screenshots in `C:\AI\rabbit-R1` are corrupt (UTF-16 redirect). The R1 local server is currently unreachable; left alone. Pocket Recon stalled at exploration, so it's not a post topic.
