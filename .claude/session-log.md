@@ -1,5 +1,23 @@
 # Session Log
 
+## 2026-09-28 07:05
+
+**Summary:** Started a social-media track separate from the blog: posts that stand alone with no blog link, to build Kit's personal brand before the business (Marzipan, still unnamed publicly) launches. Created `social-media/` (gitignored in `.gitignore`, the only tracked change, uncommitted per Kit) with `README.md`, `VOICE.md` (Kit's bio line in his words: "Coast Guard vet. AI builder, hardware hacking, vibe coding into bliss. Still figuring out the next chapter out loud", plus pillars and hard lines), and `GROWTH.md`. Kit said no post has had reactions; baseline is 309 LinkedIn connections and 5 X followers, so the diagnosis is reach, not writing. `GROWTH.md` sets a two-week LinkedIn-only test (3 posts/week, photos, no links, easy questions, 15 min/day commenting, ~10 connection requests/day; X replies only). First post, Faux Bunny R1, went up on LinkedIn ~07:00 with a desk photo and a screenshot pulled off the Moto via adb (git-bash needs `MSYS_NO_PATHCONV=1`). Old R1 screenshots in `C:\AI\rabbit-R1` are corrupt (UTF-16 redirect). The R1 local server is currently unreachable; left alone. Pocket Recon stalled at exploration, so it's not a post topic.
+
+**Status:**
+- `social-media/` folder + docs — **implemented**: files exist, gitignored, not committed.
+- Faux Bunny R1 LinkedIn post — **not yet verified**: Kit said "its posted"; not observed, no numbers yet.
+- Moto screenshot — **verified in the real environment**: `adb shell screencap` + `adb pull`, image viewed.
+
+**Open tasks:**
+- [ ] next — Draft the vibe-coding hot take for Wednesday (see `NEXT.md`); Kit posts it.
+- [ ] blocked-by-Kit — Commit `.gitignore` (`social-media/`); he said not now.
+- [ ] blocked-by-Kit — Gitignore or move social-only untracked files (`social/commander-oracle*`, `social/jev-break-room.md`, `feedback/linkedin-career-change.md`); keep/delete `drafts/more-than-a-super-google*.md`.
+- [ ] not-yet-verified — Faux Bunny R1 reactions/comments into `GROWTH.md` log.
+- [ ] not-yet-verified — 2026-09-16 pipeline rules (`a4276c7`) on the next `/post-draft`/`/post-review` run.
+
+**Deferred:** Fixing the R1 local server (possible "back out of the drawer" post later).
+
 ## 2026-09-21 17:40
 
 **Summary:** No blog post. Kit wanted a LinkedIn post but had no topic. I offered four, and he picked Jev (TypeSafe's System One model), based on the work in `C:\AI\two14-lab` (`9b2bc7a`). There, Jev re-judged 1,438 citations: it matched Luna 74% of the time, Luna matches itself 80%, and they matched 90% when Jev was ≥0.8 confident. Two14 sits on the unannounced business's subdomain, so the first draft left out the product name, the domain, and the real user. Kit went further: call it only "an app in development", don't say what it does, make it shorter, and use his tone. He then asked for more on what Jev is and how it's marketed. That paragraph uses TypeSafe's own wording from their skill (v0.5.7); I didn't check their live website. He approved the ~1,000-char version and is posting it himself. Draft and feedback are gitignored (`041a37f`).

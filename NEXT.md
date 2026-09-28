@@ -1,7 +1,7 @@
 # Next
 
-**Action:** On the next `/post-draft` or `/post-review` run, confirm the 2026-09-16 rule changes (`a4276c7`) actually take effect.
-**Why now:** They're implemented only. `people-mad-at-ai` burned two panels on problems these rules are meant to prevent.
-**Start here:** `.claude/skills/post-draft/SKILL.md` steps 2c/2d and the self-check; `.claude/skills/post-review/SKILL.md` "Closed questions stay closed".
-**Verify with:** the transcript gets a `## Closed questions` section; no seat re-asks a closed item; the voice, slop and reader agents run on Sonnet; the review stops at 2 rounds.
-**Watch out for:** Don't rewrite Kit's claims to fit sources the pipeline finds. Link them or cut them.
+**Action:** Draft Wednesday's LinkedIn hot take on vibe coding, from Kit's own rough take, into `social-media/posts/vibe-coding.md`.
+**Why now:** Second post of the two-week LinkedIn test (`social-media/GROWTH.md`); a text opinion post to contrast Monday's photo post.
+**Start here:** `social-media/VOICE.md` (his one-liner + pillars), then ask Kit to talk it out: what building without knowing the code is like, what's good, what worries him, what people get wrong.
+**Verify with:** Kit approves the text and posts it; its row in `GROWTH.md`'s log gets filled in.
+**Watch out for:** Facts only from Kit. No Marzipan/business framing. LinkedIn hook first, real question last, no link, no em dashes. Also log Monday's Faux Bunny R1 numbers.
