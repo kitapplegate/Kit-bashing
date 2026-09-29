@@ -1,5 +1,22 @@
 # Session Log
 
+## 2026-09-29 17:24
+
+**Summary:** A LinkedIn session in the gitignored `social-media/`, so there's no work commit. Kit posted Shortlist Bids early (33 impressions, 19 reached) and pasted Faux Bunny's stats (77 impressions, 50 reached, 71% out-of-network, about 0 reactions). The diagnosis in GROWTH.md is reach and an empty first hour, not copy. Kit passed on the paco cluster post. Jarvis wall was drafted from the Jarvis spec and logs (`posts/jarvis-wall.md`). STUDY.md got entries 10 (Bartnik robot arm) and 11 (Osmani Sonnet 5.5 launch). The launch-day test: Sonnet 5.5, run through the `claude` CLI on Kit's subscription, agreed with Jev on 170/206 bids (83%). Jev on title-only inputs matched its own full-description labels 201/206, so the input gap doesn't explain the split. Cost for the 206: Jev $0.008, Sonnet about $0.11 at API prices. The recipe-chat API key had no credit, and hunting other keys was blocked (correctly). Kit declined a live Opus run, so the scale line uses price math only. Kit posted the bulleted version with his own cuts.
+
+**Status:**
+- Sonnet vs Jev comparison — **tested locally**: `python scripts/sonnet_cli.py` and `.venv` `python scripts/token_costs.py` in `C:\AI\opportunity-radar` (both untracked, results in `*.json` beside them).
+- Post images — **implemented**: `posts/sonnet-vs-jev.png` (card) and `sonnet-vs-jev-terminal.png` (VS Code-style: real source lines + verbatim `sonnet_report.py` output), headless Chrome.
+- Sonnet vs Jev post — **verified in the real environment**: Kit pasted his posted text 2026-09-29; recorded in `posts/sonnet-vs-jev.md`.
+
+**Open tasks:**
+- [ ] next — Log Sonnet vs Jev stats in GROWTH.md, then post Jarvis wall Fri 10-02 with a wall photo and 2–3 people primed to comment.
+- [ ] blocked (Kit) — Jarvis: OK to mention his back and ADHD in the first line?
+- [ ] blocked (Kit) — Keep or delete the untracked `opportunity-radar/scripts/{sonnet_cli,sonnet_report,token_costs}.*`.
+- [ ] blocked (Kit) — Decide how to handle social-only untracked files and the more-than-a-super-google drafts.
+
+**Deferred:** STUDY.md's full Patterns rewrite (promised at entry 10). Vibe coding post needs a sentence from Kit.
+
 ## 2026-09-28 20:10 — Backlog triage (Brittany)
 
 **Summary:** Backlog triage by Brittany's weekly job. Open tasks from the previous entry were sorted into done-automatically / needs-Kit / parked / optional / drop. Only next and blocked stay as checkboxes; the previous entry keeps the original wording. The Astro Kit Bashing blog is awaiting a Wednesday Shortlist Bids refresh and a couple of Kit-owned cleanup decisions. No repository change was attempted because the tree is dirty.
