@@ -1,5 +1,17 @@
 # Session Log
 
+## 2026-09-28 20:10 — Backlog triage (Brittany)
+
+**Summary:** Backlog triage by Brittany's weekly job. Open tasks from the previous entry were sorted into done-automatically / needs-Kit / parked / optional / drop. Only next and blocked stay as checkboxes; the previous entry keeps the original wording. The Astro Kit Bashing blog is awaiting a Wednesday Shortlist Bids refresh and a couple of Kit-owned cleanup decisions. No repository change was attempted because the tree is dirty.
+
+**Open tasks:**
+- [ ] next — Post Shortlist Bids Wed 09-30 after confirming fresh data; log it and Faux Bunny numbers in GROWTH.md.
+- [ ] blocked (Kit) — Trigger or diagnose the Shortlist Bids refresh.
+- [ ] blocked (Kit) — Decide how to handle social-only untracked files and the more-than-a-super-google drafts.
+
+**Parked:**
+- 2026-09-16 pipeline rules remain unverified until the next /post-draft or /post-review run.
+
 ## 2026-09-28 16:36
 
 **Summary:** Social-only session. Nothing tracked changed, since `social-media/` is gitignored (`ba395e7`). The earlier log wrongly said `.gitignore` was uncommitted. Built `social-media/STUDY.md`, a file of well-performing LinkedIn posts Kit pastes in, each broken down (hook, shape, ending, steal/don't steal). It has 9 entries so far; Basia Kubicka is 3 of them, and Megan Forbell is the first likely-small account. First Patterns pass: none of the big posts ends on a life question, how-tos and lists draw the most comments, secondhand news flops even for big names, and tagging a real person is the reach move at Kit's size. Added phone capture note `C:\AI\Brain\LinkedIn Posts to Study.md` (the sweep only processes `inbox.md`/`Faux Bunny R1.md`). Drafted `posts/shortlist-bids.md` with Kit: Jev named, "automation study" framing (selling cut), GRDA spelled out, more sources coming. Wording feedback is in `feedback/shortlist-bids.md`. Found that shortlistbids.com's Monday 06:00 refresh never ran; its data is still 2026-09-26.
